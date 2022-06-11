@@ -6,9 +6,9 @@ ruby "3.1.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
 
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
-
+# # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+# gem "sprockets-rails"
+gem "propshaft"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
@@ -44,7 +44,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-gem "sassc-rails"
+# gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -82,23 +82,17 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-end
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"
   gem 'autodoc', '~> 0.7.6'
   gem 'database_rewinder', '~> 0.9.8'
   gem 'json_spec', '~> 1.1', '>= 1.1.5'
   gem 'rspec-request_describer', '~> 0.3.2'
 end
+
 gem 'factory_bot_rails', '~> 6.2'
 gem 'ffaker', '~> 2.20'
 gem 'pry-rails'
 gem 'hirb'
 gem 'hirb-unicode-steakknife', '~> 0.0.9'
-
 gem 'tailwindcss-rails'
 gem 'rails-i18n'
 gem 'rails_real_favicon'

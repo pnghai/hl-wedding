@@ -1,6 +1,11 @@
 version: '2.4'
 
 services:
+  jsbuild:
+    extends:
+      file: docker-compose.yml
+      service: backend
+    command: bash -c "yarn build --watch"
   backend:
     depends_on:
       postgres:
