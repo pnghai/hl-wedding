@@ -1,0 +1,12 @@
+version: '2.4'
+
+services:
+  backend:
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+#  webpacker:
+#    ports:
+#      - '8888:8888'
