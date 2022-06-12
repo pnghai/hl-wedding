@@ -29,7 +29,7 @@ gem 'hiredis'
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -103,3 +103,4 @@ gem 'sidekiq-cron', '~> 1.2'
 gem 'timeliness-i18n', '~> 0.11.0'
 gem 'validates_timeliness', '~> 5.0'
 gem 'sidekiq-failures'
+gem "hotwire-livereload", "~> 1.1", :group => :development

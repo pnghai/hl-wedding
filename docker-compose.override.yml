@@ -1,17 +1,19 @@
 version: '2.4'
 
 services:
-  jsbuild:
-    extends:
-      file: docker-compose.yml
-      service: backend
-    command: bash -c "yarn build --watch"
+#  jsbuild:
+#    extends:
+#      file: docker-compose.yml
+#      service: backend
+#    command: bash -c "yarn build --watch"
   backend:
     depends_on:
       postgres:
         condition: service_healthy
       redis:
         condition: service_healthy
+  rails:
+    command: bash -c "./bin/dev"
 #  webpacker:
 #    ports:
 #      - '8888:8888'

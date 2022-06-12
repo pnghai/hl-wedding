@@ -55,13 +55,13 @@ services:
     <<: *backend
     command: /bin/bash
     ports:
-      - '4000:4000'
+      - '3000:3000'
       - '3002:3002'
   rails:
     <<: *backend
-    command: bash -c "rm -rf tmp/pids/server.pid && yarn install && yarn build && bundle exec rails s -b 0.0.0.0 -p 4000"
+    command: bash -c "rm -rf tmp/pids/server.pid && yarn install && yarn build && bundle exec rails s -b 0.0.0.0 -p 3000"
     ports:
-      - '4000:4000'
+      - '3000:3000'
 
   sidekiq:
     <<: *backend

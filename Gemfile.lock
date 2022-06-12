@@ -129,6 +129,9 @@ GEM
       hirb (~> 0.5)
       unicode-display_width (~> 1.1)
     hiredis (0.6.3)
+    hotwire-livereload (1.1.0)
+      listen (>= 3.0.0)
+      rails (>= 6.0.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
@@ -173,6 +176,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.6-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     parallel (1.22.1)
@@ -318,6 +323,8 @@ GEM
       listen (>= 2.7, < 4.0)
       spring (>= 1.2, < 3.0)
     strscan (3.0.3)
+    tailwindcss-rails (2.0.8-x86_64-darwin)
+      railties (>= 6.0.0)
     tailwindcss-rails (2.0.8-x86_64-linux)
       railties (>= 6.0.0)
     temple (0.8.2)
@@ -359,6 +366,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -377,6 +385,7 @@ DEPENDENCIES
   hirb
   hirb-unicode-steakknife (~> 0.0.9)
   hiredis
+  hotwire-livereload (~> 1.1)
   jbuilder
   jsbundling-rails
   json_spec (~> 1.1, >= 1.1.5)
@@ -391,6 +400,7 @@ DEPENDENCIES
   rails (~> 7.0.3)
   rails-i18n
   rails_real_favicon
+  redis (~> 4.0)
   rspec-rails (~> 5.0, >= 5.0.1)
   rspec-request_describer (~> 0.3.2)
   rubocop-performance (~> 1.13, >= 1.13.2)
