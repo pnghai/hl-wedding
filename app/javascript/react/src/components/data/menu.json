@@ -1,0 +1,44 @@
+{
+  "menu": [
+    {
+      "title": "home",
+      "anchor": "#home",
+      "text": "Home"
+    },
+    {
+      "title": "couple",
+      "anchor": "#couple",
+      "text": "Couple"
+    },
+    {
+      "title": "our story",
+      "anchor": "#story",
+      "text": "Our Story"
+    },
+    {
+      "title": "friends",
+      "anchor": "#friends",
+      "text": "Friends"
+    },
+    {
+      "title": "organization",
+      "anchor": "#organization",
+      "text": "Organization"
+    },
+    {
+      "title": "gallery",
+      "anchor": "#gallery",
+      "text": "Gallery"
+    },
+    {
+      "title": "when and where",
+      "anchor": "#event",
+      "text": "When & Where"
+    },
+    {
+      "title": "R.S.V.P",
+      "anchor": "#rsvp",
+      "text": "R.S.V.P"
+    }
+  ]
+}

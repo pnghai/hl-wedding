@@ -2,20 +2,36 @@ import * as React from "react";
 import { useTimeout } from 'react-use';
 import tw from "tailwind-styled-components";
 import Loading from "./Loading";
-
-const Container = tw.main`w-full overflow-hidden relative`;
-const Aside = tw.aside`fixed top-0 left-0 w-1/5 py-16 px-8 overflow-y-scroll bg-[#f6f1f0]`;
-const Main = tw.div`float-right duration-500 transition-all ease-in-out w-4/5`;
-
+import { olive } from '../../../assets'
+import Menu from "./sub/Menu";
+import MainView from "./sub/MainView";
+const Container = tw.main`h-screen overflow-hidden relative`;
+const Aside = tw.aside`float-left w-[30%] xl:w-[22%] h-screen py-16 px-8 overflow-y-scroll bg-[#f6f1f0] flex-col flex align-items-center text-center`;
 function Dashboard(){
   return (
     <Container>
       <Aside>
-        nav heer
+        <div>
+          <div>
+            <img src={olive} alt="wedding symbol" className="h-8 mx-auto"/>
+          </div>
+          <p className="font-alex text-twine text-3xl leading-loose">Mỹ Linh & Nguyễn Hải</p>
+          <h6 className="font-nunito-sans text-xs tracking-[5px] mb-1.5">
+            13.11.2022 DL
+            <br/>
+            (20-10-2022 Â.L)
+          </h6>
+        </div>
+        <Menu/>
+        <div className="mt-auto font-nunito-sans text-sm text-zinc-400 tracking-wider">
+          <div className="w-16 h-px bg-[#bd945a66] w-16 mx-auto my-1.5"/>
+          <small className="text-center">
+            Hai & Linh Wedding
+            <br/>2022, HCMC
+          </small>
+        </div>
       </Aside>
-      <Main>
-        main
-      </Main>
+      <MainView/>
     </Container>
   )
 }

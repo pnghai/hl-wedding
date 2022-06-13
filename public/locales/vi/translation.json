@@ -1,0 +1,19 @@
+{
+  "Forget Password?": "パスワードをお忘れますか？",
+  "Log in": "ログイン",
+  "Language": "言語",
+  "Email is required": "メールが必要です",
+  "Password is required": "パスワードが必要です",
+  "Email": "メールアドレス",
+  "Password": "パスワード",
+  "Remember Me": "ログインするまま",
+  "Forgot Password": "パスワード忘れ",
+  "pagination_info": "{{length}}の項目の中に{{entriesStart}}目から{{entriesEnd}}目まで表示中",
+  "entries per page": "項目・ページ",
+  "Edit": "編集",
+  "Delete": "削除",
+  "Action": "操作",
+  "Phone": "電話番号",
+  "Name": "名",
+  "Id": "番号"
+}
