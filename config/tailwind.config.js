@@ -19,6 +19,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'hint-of-red': {
+          DEFAULT: '#FAF8F7',
+          '50': '#FFFFFF',
+          '100': '#FFFFFF',
+          '200': '#FFFFFF',
+          '300': '#FFFFFF',
+          '400': '#FFFFFF',
+          '500': '#FAF8F7',
+          '600': '#E4DAD4',
+          '700': '#CFBCB2',
+          '800': '#B99D8F',
+          '900': '#A47F6D'
+        },
         "twine": {
           DEFAULT: "#BD945A",
           "50": "#F1E9DD",
