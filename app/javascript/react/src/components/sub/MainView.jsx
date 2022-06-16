@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components";
 import Countdown from "react-countdown";
 import { format } from "date-fns";
 const Main = tw.div`h-screen float-right duration-500 transition-all ease-in-out w-[70%] xl:w-[78%] overflow-scroll`;
-import { couple, dots, rings } from "../../../../assets";
+import { couple, dots, olive, rings } from "../../../../assets";
 import {
   BsHeart,
   GiClover, TbBrandInstagram,
@@ -11,6 +11,7 @@ import {
   TiSocialFacebook
 } from "react-icons/all";
 import { MARRIAGE_DATE } from "../../utils/config";
+import { Field, Form, Formik } from "formik";
 const Avatar=tw.div`xl:shrink-0 rounded-full basis-36 h-36 overflow-hidden mx-auto`;
 const SocialLink = tw.a`btn btn-sm btn-circle btn-outline btn-primary transition-all ease-in-out duration-500`;
 const StoryP = tw.p`font-nunito-sans mb-5 text-gray-400 leading-7 text-[15px]`;
@@ -142,8 +143,8 @@ export default function MainView(){
       <section id="friends" className="bg-hint-of-red py-24">
         <Container>
           <div className="mb-8">
-            <span className="font-alex text-5xl text-twine leading-7 mb-4">Our best friends ever</span>
-            <h2 className="font-garamond text-7xl tracking-wide uppercase">Thanks for being there</h2>
+            <span className="font-alex text-3xl text-twine leading-7 mb-4">Our best friends ever</span>
+            <h2 className="font-garamond text-3xl tracking-wide uppercase">Thanks for being there</h2>
           </div>
           <div className="row">
             <div className="col-md-12">
@@ -220,6 +221,77 @@ export default function MainView(){
           </div>
         </div>
       </section>
+      <section id="organization" className="bg-hint-of-red py-24">
+        <Container>
+          <div className="mb-8">
+            <span className="font-alex text-3xl text-twine leading-7 mb-4">Wedding</span>
+            <h2 className="font-garamond text-3xl tracking-wide uppercase">Organization</h2>
+          </div>
+        </Container>
+      </section>
+      <section id="event" className="bg-hint-of-red py-24">
+        <Container>
+          <div className="mb-8">
+            <span className="font-alex text-3xl text-twine leading-7 mb-4">Questions</span>
+            <h2 className="font-garamond text-3xl tracking-wide uppercase">When & Where</h2>
+          </div>
+        </Container>
+      </section>
+      <section id="event" className="bg-hint-of-red py-24">
+        <Container>
+          <div className="mb-8">
+            <span className="font-alex text-3xl text-twine leading-7 mb-4">Questions</span>
+            <h2 className="font-garamond text-3xl tracking-wide uppercase">When & Where</h2>
+          </div>
+        </Container>
+      </section>
+      <section id="rsvp">
+        <div className="py-24 bg-cover bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-2.jpg)`}}>
+          <div className="container px-8 lg:px-16">
+            <div className="bg-white p-10 md:w-2/4 mx-auto">
+              <div className="text-center">
+                <span className="font-alex text-3xl text-twine leading-7 mb-4">Will you attend?</span>
+                <h2 className="font-garamond text-3xl tracking-wide uppercase">R.S.V.P</h2>
+                <Formik
+                  initialValues={{
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                  }}
+                  onSubmit={async (values) => {
+                    await new Promise((r) => setTimeout(r, 500));
+                    alert(JSON.stringify(values, null, 2));
+                  }}
+                >
+                  <Form>
+                    <label htmlFor="firstName">First Name</label>
+                    <Field id="firstName" name="firstName" placeholder="Jane" />
+
+                    <label htmlFor="lastName">Last Name</label>
+                    <Field id="lastName" name="lastName" placeholder="Doe" />
+
+                    <label htmlFor="email">Email</label>
+                    <Field
+                      id="email"
+                      name="email"
+                      placeholder="jane@acme.com"
+                      type="email"
+                    />
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                  </Form>
+                </Formik>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className="bg-hint-of-red py-24">
+        <img src={olive} alt="wedding symbol" className="h-8 mb-2.5 mx-auto"/>
+        <div className="text-center">
+          <span className="font-alex text-3xl font-medium">Mỹ Linh <small className="text-[80%]">&</small> Nguyễn Hải</span>
+          <p className="text-slate-400 font-garamond text-lg mb-5 italic">© 2022 HCMC. All Rights Reserved.</p>
+        </div>
+      </footer>
     </Main>
   )
 }
