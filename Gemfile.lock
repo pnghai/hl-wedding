@@ -109,6 +109,8 @@ GEM
     debug_inspector (1.1.0)
     diff-lcs (1.5.0)
     digest (3.1.0)
+    email_validator (2.2.3)
+      activemodel
     erubi (1.10.0)
     et-orbi (1.2.7)
       tzinfo
@@ -124,6 +126,8 @@ GEM
       raabro (~> 1.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    hcaptcha (7.1.0)
+      json
     hirb (0.7.3)
     hirb-unicode-steakknife (0.0.9)
       hirb (~> 0.5)
@@ -380,8 +384,10 @@ DEPENDENCIES
   capybara
   database_rewinder (~> 0.9.8)
   debug
+  email_validator
   factory_bot_rails (~> 6.2)
   ffaker (~> 2.20)
+  hcaptcha
   hirb
   hirb-unicode-steakknife (~> 0.0.9)
   hiredis

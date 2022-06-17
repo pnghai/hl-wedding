@@ -6,7 +6,7 @@ import { SmallTitle, Subtitle } from "../../utils/styles";
 export default function Rsvp(){
   const submitHandler = async (payload) => {
     axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('[name=csrf-token]').content
-    axios.post(`url`, payload)
+    axios.post('rsvps', payload)
       .then( (resp) => console.log(resp))
       .catch( (error) => console.log(error))
   }

@@ -105,3 +105,5 @@ gem 'timeliness-i18n', '~> 0.11.0'
 gem 'validates_timeliness', '~> 5.0'
 gem 'sidekiq-failures'
 gem "hotwire-livereload", "~> 1.1", :group => :development
+gem 'email_validator'
+gem "hcaptcha"
