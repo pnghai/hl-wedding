@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Field, Form, Formik } from "formik";
+import { SmallTitle, Subtitle } from "../../utils/styles";
 
 export default function Rsvp(){
   return(
@@ -8,8 +9,8 @@ export default function Rsvp(){
         <div className="container px-8 lg:px-16">
           <div className="bg-white p-10 md:w-2/4 mx-auto">
             <div className="text-center">
-              <span className="font-alex text-3xl text-twine leading-7 mb-4">Will you attend?</span>
-              <h2 className="font-garamond text-3xl tracking-wide uppercase mb-8">R.S.V.P</h2>
+              <SmallTitle>Will you attend?</SmallTitle>
+              <Subtitle>R.S.V.P</Subtitle>
               <Formik
                 initialValues={{
                   name: '',
@@ -22,7 +23,7 @@ export default function Rsvp(){
                   alert(JSON.stringify(values, null, 2));
                 }}
               >
-                <Form className="font-nunito-sans">
+                <Form className="font-nunito-sans mt-8">
                   <Field id="name" name="name" placeholder="Name" className="input w-full input-bordered input-primary mb-4" />
                   <Field
                     id="email"

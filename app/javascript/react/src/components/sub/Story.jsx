@@ -1,6 +1,6 @@
 import * as React from "react";
 import { dots } from "../../../../assets";
-import { Container, StoryP } from "../../utils/styles";
+import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
 
 export default function Story(){
   return(
@@ -18,8 +18,8 @@ export default function Story(){
             </div>
           </div>
           <div className="md:col-span-7">
-            <h4 className="font-alex text-3xl text-twine mb-2.5">Our love.</h4>
-            <h3 className="tracking-wide mb-5 font-garamond font-medium uppercase text-3xl">Our Story</h3>
+            <SmallTitle>Our love.</SmallTitle>
+            <Subtitle>Our Story</Subtitle>
             <StoryP>Curabit aliquet orci elit genes tristique lorem commodo vitae. Tuliaum tincidunt nete sede gravida
               aliquam, neque libero hendrerit magna, sit amet mollis lacus ithe maurise. Dunya erat volutpat edat
               themo the druanye semper.</StoryP>

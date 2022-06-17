@@ -1,13 +1,13 @@
 import * as React from "react";
-import { Container } from "../../utils/styles";
+import { Container, SmallTitle, Subtitle } from "../../utils/styles";
 
 export default function Friends(){
   return(
     <section id="friends" className="bg-hint-of-red py-24">
       <Container>
         <div className="mb-8">
-          <span className="font-alex text-3xl text-twine leading-7 mb-4">Our best friends ever</span>
-          <h2 className="font-garamond text-3xl tracking-wide uppercase">Thanks for being there</h2>
+          <SmallTitle>Our best friends ever</SmallTitle>
+          <Subtitle>Thanks for being there</Subtitle>
         </div>
         <div className="row">
           <div className="col-md-12">

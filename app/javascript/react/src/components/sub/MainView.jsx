@@ -11,6 +11,7 @@ import Questions from "./Questions";
 import Organization from "./Organization";
 import Friends from "./Friends";
 import { Main } from "../../utils/styles";
+import Gallery from "./Gallery";
 
 export default function MainView(){
   return(
@@ -22,6 +23,7 @@ export default function MainView(){
       <Friends/>
       <LookingFw/>
       <Organization/>
+      <Gallery/>
       <Questions/>
       <Rsvp/>
       <Footer/>
