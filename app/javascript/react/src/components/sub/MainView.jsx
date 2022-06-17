@@ -277,7 +277,7 @@ export default function MainView(){
                       placeholder="jane@acme.com"
                       type="email"
                     />
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary rounded-none">Submit</button>
                   </Form>
                 </Formik>
               </div>
