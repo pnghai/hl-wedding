@@ -5,7 +5,7 @@ import { SmallTitle, Subtitle } from "../../utils/styles";
 export default function Rsvp(){
   return(
     <section id="rsvp">
-      <div className="py-24 bg-cover bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-2.jpg)`}}>
+      <div className="py-24 bg-cover bg-scroll md:bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-2.jpg)`}}>
         <div className="container px-8 lg:px-16">
           <div className="bg-white p-10 md:w-2/4 mx-auto">
             <div className="text-center">

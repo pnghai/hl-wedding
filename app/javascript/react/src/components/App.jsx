@@ -5,19 +5,20 @@ import MainView from "./sub/MainView";
 import Sidebar from "./sub/Sidebar";
 import { MainScreen, NavToggler } from "../utils/styles";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/all";
-import { useState } from "react";
+import { useContext } from "react";
+import { Context } from "./store";
 function Dashboard(){
-  const [opened, setOpened] = useState(false);
+  const [{ menuOpen }, dispatch] = useContext(Context);
   const toggleMenu = (e)=>{
-    setOpened(!opened);
+    dispatch({ type: 'TOGGLE_MENU', value: !menuOpen});
     e.preventDefault();
   }
   return (
     <MainScreen>
-      <Sidebar className={opened ? `translate-x-0` :`-translate-x-[270px]`}/>
-      <MainView className={ opened ? `translate-x-[270px]` : `` }/>
-      <NavToggler className={ opened ? `translate-x-[270px]` : `` } href="#" onClick={toggleMenu}>
-        {opened ?
+      <Sidebar className={menuOpen ? `translate-x-0` :`-translate-x-[270px]`}/>
+      <MainView className={ menuOpen ? `translate-x-[270px]` : `` }/>
+      <NavToggler className={ menuOpen ? `translate-x-[270px]` : `` } href="#" onClick={toggleMenu}>
+        {menuOpen ?
           <IoCloseOutline color="#fff" size="25px"/> : <IoMenuOutline color="#fff" size="25px"/>
         }
       </NavToggler>

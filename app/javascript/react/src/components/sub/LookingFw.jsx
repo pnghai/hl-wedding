@@ -6,7 +6,7 @@ import { MARRIAGE_DATE } from "../../utils/config";
 export default function LookingFw(){
   return(
     <section id="looking-fw">
-      <div className="py-24 bg-cover bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-3.jpg)`}}>
+      <div className="py-24 bg-cover bg-scroll md:bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-3.jpg)`}}>
         <div className="container px-8 lg:px-16">
           <div className="text-center text-white">
             <div className="inline-block">

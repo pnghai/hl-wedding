@@ -21,7 +21,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 export default function Countdown(){
   return(
     <section id="count-down">
-      <div className="py-24 bg-cover bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-1.jpg)`}}>
+      <div className="py-24 bg-cover bg-no-repeat bg-scroll md:bg-fixed" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-1.jpg)`}}>
         <div className="container px-8 lg:px-16">
           <div className="text-center text-white">
             <h4 className="font-alex text-6xl mb-4">We will become a family in</h4>
