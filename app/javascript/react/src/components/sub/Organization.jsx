@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Container, SmallTitle, Subtitle } from "../../utils/styles";
+import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
 const data = [
   {
     id: "01",
@@ -35,7 +35,7 @@ export default function Organization(){
             <div key={key} className="px-8 py-16 bg-white transition-all duration-500 hover:!text-white hover:bg-black/60">
               <h2 className="font-garamond font-medium leading-[1.25em] text-7xl text-transparent mb-4" style={{ WebkitTextStroke: '1px #BD945A', }}>{id}</h2>
               <h6 className="font-garamond uppercase text-xl mt-2.5 mb-4">{title}</h6>
-              <p className="font-nunito-sans text-sm text-slate-400 mb-5 leading-7">{desc}</p>
+              <StoryP>{desc}</StoryP>
             </div>
           ))}
         </div>
