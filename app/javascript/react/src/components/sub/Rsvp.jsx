@@ -13,6 +13,8 @@ import { useRef } from "react";
 export default function Rsvp(){
   const { t } = useTranslation();
   const validationSchema = yup.object({
+    token: yup.string().required(),
+    guests: yup.number().integer().min(0),
     email: yup
       .string()
       .max(50)
@@ -58,7 +60,8 @@ export default function Rsvp(){
                   name: '',
                   email: '',
                   guests: 0,
-                  message: ''
+                  message: '',
+                  token: '',
                 }}
                 onSubmit={submitHandler}
               >
