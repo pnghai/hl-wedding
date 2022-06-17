@@ -50,7 +50,8 @@ services:
       - DEBUG_MODE=${DEBUG_MODE}
       - SECRET_KEY_BASE=${SECRET_KEY_BASE}
       - DB_POOL=${DB_POOL}
-      - DISABLE_SPRING=1
+      - HCAPTCHA_SITE_KEY=${HCAPTCHA_SITE_KEY}
+      - HCAPTCHA_SECRET_KEY=${HCAPTCHA_SECRET_KEY}
   runner:
     <<: *backend
     command: /bin/bash

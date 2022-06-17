@@ -18,7 +18,10 @@ class RsvpsController < ApplicationController
     @rsvp = Rsvp.new(rsvp_params)
 
     if @rsvp.save
-      render :show, status: :created, location: @rsvp
+      respond_to do |format|
+        format.html { render :show, status: :ok, location: @rsvp }
+        format.json { render json: @rsvp }
+      end
     else
       render json: @rsvp.errors, status: :unprocessable_entity
     end
@@ -28,7 +31,10 @@ class RsvpsController < ApplicationController
   # PATCH/PUT /rsvps/1.json
   def update
     if @rsvp.update(rsvp_params)
-      render :show, status: :ok, location: @rsvp
+      respond_to do |format|
+        format.html { render :show, status: :ok, location: @rsvp }
+        format.json { render json: @rsvp }
+      end
     else
       render json: @rsvp.errors, status: :unprocessable_entity
     end

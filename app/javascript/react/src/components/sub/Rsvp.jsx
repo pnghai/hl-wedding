@@ -1,14 +1,47 @@
 import * as React from "react";
 import { Field, Form, Formik } from "formik";
+import * as yup from "yup";
+import isEmailValidator from "validator/lib/isEmail";
 import axios from "axios";
+import { toast } from "react-toastify";
 import { SmallTitle, Subtitle } from "../../utils/styles";
+import { useTranslation } from "react-i18next";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
+import { HCAPTCHA_SITE_KEY } from "../../utils/config";
+import { useRef } from "react";
 
 export default function Rsvp(){
-  const submitHandler = async (payload) => {
+  const { t } = useTranslation();
+  const validationSchema = yup.object({
+    email: yup
+      .string()
+      .max(50)
+      .required(t("Email is required"))
+      .test(
+        "is-valid",
+        (message) => t(`${message.path} is invalid`),
+        (value) => (value ? isEmailValidator(value) : new yup.ValidationError(t("Invalid email address")))
+      ),
+  });
+  const captchaRef = useRef(null);
+  const onLoad = () => {
+    // this reaches out to the hCaptcha JS API and runs the
+    // execute function on it. you can use other functions as
+    // documented here:
+    // https://docs.hcaptcha.com/configuration#jsapi
+    captchaRef.current.execute();
+  };
+  const submitHandler = async (payload, { setSubmitting, resetForm }) => {
+    setSubmitting(true);
     axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('[name=csrf-token]').content
-    axios.post('rsvps', payload)
-      .then( (resp) => console.log(resp))
-      .catch( (error) => console.log(error))
+    try {
+      const resp = await axios.post('/rsvps.json', payload)
+      toast.success(t("Succeeded"));
+      setSubmitting(false);
+      resetForm();
+    } catch (error) {
+      setSubmitting(false);
+    }
   }
   return(
     <section id="rsvp">
@@ -19,6 +52,8 @@ export default function Rsvp(){
               <SmallTitle>Will you attend?</SmallTitle>
               <Subtitle>R.S.V.P</Subtitle>
               <Formik
+                enableReinitialize
+                validationSchema={validationSchema}
                 initialValues={{
                   name: '',
                   email: '',
@@ -27,19 +62,29 @@ export default function Rsvp(){
                 }}
                 onSubmit={submitHandler}
               >
-                <Form className="font-nunito-sans mt-8">
-                  <Field id="name" name="name" placeholder="Name" className="input w-full input-bordered input-primary mb-4" />
-                  <Field
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    type="email"
-                    className="input w-full input-bordered input-primary mb-4"
-                  />
-                  <Field type="number" id="guests" name="guests" placeholder="Guests" className="input w-full input-bordered input-primary mb-4"  />
-                  <Field component="textarea" id="message" name="message" placeholder="Message" className="textarea textarea-primary w-full mb-4" />
-                  <button type="submit" className="btn btn-primary rounded-none">Submit</button>
-                </Form>
+                {({ isValid, touched, errors, submitForm, isSubmitting, resetForm, setFieldValue }) => (
+                  <Form className="font-nunito-sans mt-8">
+                    <Field id="name" name="name" placeholder="Name" className="input w-full input-bordered input-primary mb-4" />
+                    <Field
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      type="email"
+                      className="input w-full input-bordered input-primary mb-4"
+                    />
+                    <Field type="number" id="guests" name="guests" placeholder="Guests" className="input w-full input-bordered input-primary mb-4"  />
+                    <Field component="textarea" id="message" name="message" placeholder="Message" className="textarea textarea-primary w-full mb-4" />
+                    <HCaptcha
+                      sitekey={HCAPTCHA_SITE_KEY}
+                      onLoad={onLoad}
+                      onVerify={(token)=> {
+                        setFieldValue('token', token)
+                      }}
+                      ref={captchaRef}
+                    />
+                    <button disabled={!isValid || isSubmitting} type="submit" className="btn btn-primary rounded-none">Submit</button>
+                  </Form>
+                )}
               </Formik>
             </div>
           </div>
