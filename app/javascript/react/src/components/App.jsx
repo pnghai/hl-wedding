@@ -1,11 +1,10 @@
 import * as React from "react";
-import { useTimeout } from 'react-use';
 import Loading from "./Loading";
 import MainView from "./sub/MainView";
 import Sidebar from "./sub/Sidebar";
 import { MainScreen, NavToggler } from "../utils/styles";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/all";
-import { useContext } from "react";
+import { useContext, Suspense } from "react";
 import { Context } from "./store";
 function Dashboard(){
   const [{ menuOpen }, dispatch] = useContext(Context);
@@ -26,21 +25,10 @@ function Dashboard(){
   )
 }
 
-function LoadStuff(){
-  const ms = 2000;
-  const [isReady,] = useTimeout(ms);
-
-  return (
-    <div>
-      { isReady() ? <Dashboard/> : <Loading/> }
-    </div>
-  );
-}
-
 export default function App() {
   return (
-    <React.Suspense fallback={<Loading/>}>
-      <LoadStuff/>
-    </React.Suspense>
+    <Suspense fallback={<Loading/>}>
+      <Dashboard/>
+    </Suspense>
   )
 }

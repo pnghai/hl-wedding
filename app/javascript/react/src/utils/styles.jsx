@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components";
 
 const MainScreen = tw.main`h-screen overflow-hidden relative`;
-const Aside = tw.aside`fixed top-0 left-0 md:translate-x-0 md:block float-left w-[270px] md:w-[30%] xl:w-[22%] h-screen px-2 py-10 md:px-8 md:py-16 overflow-y-scroll bg-[#f6f1f0] flex-col flex align-items-center text-center transition-all duration-500`;
+const Aside = tw.aside`fixed top-0 left-0 md:translate-x-0 float-left w-[270px] md:w-[30%] xl:w-[22%] h-screen px-2 py-10 md:px-8 md:py-16 overflow-y-scroll bg-[#f6f1f0] flex-col flex align-items-center text-center transition-all duration-500`;
 const Container = tw.div`container px-8 md:px-16 lg:px-32`;
 const Avatar =tw.div`rounded-full w-36 h-36 overflow-hidden mx-auto`;
 const StoryP = tw.p`font-nunito-sans mb-5 text-gray-400 leading-7 text-[15px]`;
