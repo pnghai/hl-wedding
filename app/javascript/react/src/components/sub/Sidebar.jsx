@@ -12,7 +12,7 @@ export default function Sidebar({ className }){
         <div>
           <img src={olive} alt="wedding symbol" className="h-8 mx-auto"/>
         </div>
-        <p className="font-alex text-twine text-3xl leading-loose">Mỹ Linh & Nguyễn Hải</p>
+        <p className="font-alex text-twine text-2xl md:text-3xl leading-loose">Mỹ Linh & Nguyễn Hải</p>
         <h6 className="font-nunito-sans text-xs tracking-[5px] mb-1.5">
           {format(MARRIAGE_DATE, "dd.MM.yyyy 'DL'")}
           <br/>
