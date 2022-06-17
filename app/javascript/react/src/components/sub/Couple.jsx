@@ -7,9 +7,11 @@ export default function Couples(){
       <Container>
         <div className="grid gap-8 grid-cols-1 md:gap-4 md:grid-cols-2 mb-16">
           <div className="p-8 bg-white flex flex-col xl:flex-row-reverse">
-            <Avatar className="mb-8 xl:mb-0 xl:ml-6">
-              <img src="https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/bride.jpg" alt="bride"/>
-            </Avatar>
+            <div>
+              <Avatar className="mb-8 xl:mb-0 xl:ml-6">
+                <img src="https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/bride.jpg" alt="bride"/>
+              </Avatar>
+            </div>
             <div className="text-center xl:text-right">
               <div className="mb-3 text-2xl font-garamond flex items-center justify-center xl:justify-end">
                 Đào Mỹ Linh
@@ -25,9 +27,11 @@ export default function Couples(){
             </div>
           </div>
           <div className="p-8 bg-white flex flex-col xl:flex-row">
-            <Avatar className="mb-8 xl:mb-0 xl:mr-6">
-              <img src="https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/bride.jpg" alt="bride"/>
-            </Avatar>
+            <div>
+              <Avatar className="mb-8 xl:mb-0 xl:ml-6">
+                <img src="https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/bride.jpg" alt="bride"/>
+              </Avatar>
+            </div>
             <div className="text-center xl:text-left">
               <div className="mb-3 text-2xl font-garamond flex items-center justify-center xl:justify-start">
                 <span className="mr-2"><BsHeart color="#BD945A" size="16px"/></span>

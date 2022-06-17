@@ -59,6 +59,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem 'rails_real_favicon'
   gem 'awesome_print', '~> 2.0.0.pre2'
   gem 'listen', '~> 3.7', '>= 3.7.1'
 

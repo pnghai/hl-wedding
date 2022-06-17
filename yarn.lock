@@ -2085,6 +2085,11 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-photo-album@^1.14.0:
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/react-photo-album/-/react-photo-album-1.14.0.tgz#3802dd66b6fa40d1339ee8713d12ff81c46eb8f8"
+  integrity sha512-MGuKvWZ5926GFmtWDq08giwjlH3s2G+8Aqmzw653weldDPxDFhGZCx6M9pMDUFo4KKs9mDRBDXEu6nk8fpiW6A==
+
 react-scrollchor@^7.0.2:
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/react-scrollchor/-/react-scrollchor-7.0.2.tgz#8a4710e71c0a72fe24a1a9be96360c774a258390"
@@ -2654,6 +2659,11 @@ yaml@^1.10.2:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
+
+yet-another-react-lightbox@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/yet-another-react-lightbox/-/yet-another-react-lightbox-1.7.1.tgz#7c1bfa52475a026581a77818cb7ee3b10c8d1923"
+  integrity sha512-OvzcxIjASUHc4X7BLRaajTMACCnu8A1DZSVLHBrrxWT7TwuX6t2Q9h1sMbogq56kky6XrLQgU7wlQXVWiwITwQ==
 
 yui@^3.18.1:
   version "3.18.1"
