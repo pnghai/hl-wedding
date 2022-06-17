@@ -4,7 +4,7 @@ import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
 import { BiDirections, MdOutlineDirections, IoLocationOutline, IoTimeOutline } from "react-icons/all";
 const settings = {
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 3,
@@ -20,7 +20,7 @@ const settings = {
     }
   ]
 };
-const data=[
+const data= [
     {
       background: "https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/2-1.jpg",
       title: "Accomodations",
