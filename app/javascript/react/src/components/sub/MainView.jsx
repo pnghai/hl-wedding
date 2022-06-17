@@ -13,9 +13,9 @@ import Friends from "./Friends";
 import { Main } from "../../utils/styles";
 import Gallery from "./Gallery";
 
-export default function MainView(){
+export default function MainView({ className }){
   return(
-    <Main>
+    <Main className={className}>
       <Header/>
       <Couples/>
       <Countdown/>

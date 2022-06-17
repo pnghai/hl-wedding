@@ -5,9 +5,9 @@ import { MARRIAGE_DATE } from "../../utils/config";
 import Menu from "./Menu";
 import { Aside } from "../../utils/styles";
 
-export default function Sidebar(){
+export default function Sidebar({ className }){
   return(
-    <Aside>
+    <Aside className={className}>
       <div>
         <div>
           <img src={olive} alt="wedding symbol" className="h-8 mx-auto"/>
