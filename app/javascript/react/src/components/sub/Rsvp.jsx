@@ -1,8 +1,15 @@
 import * as React from "react";
 import { Field, Form, Formik } from "formik";
+import axios from "axios";
 import { SmallTitle, Subtitle } from "../../utils/styles";
 
 export default function Rsvp(){
+  const submitHandler = async (payload) => {
+    axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('[name=csrf-token]').content
+    axios.post(`url`, payload)
+      .then( (resp) => console.log(resp))
+      .catch( (error) => console.log(error))
+  }
   return(
     <section id="rsvp">
       <div className="py-24 bg-cover bg-scroll md:bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-2.jpg)`}}>
@@ -18,10 +25,7 @@ export default function Rsvp(){
                   guests: 0,
                   message: ''
                 }}
-                onSubmit={async (values) => {
-                  await new Promise((r) => setTimeout(r, 500));
-                  alert(JSON.stringify(values, null, 2));
-                }}
+                onSubmit={submitHandler}
               >
                 <Form className="font-nunito-sans mt-8">
                   <Field id="name" name="name" placeholder="Name" className="input w-full input-bordered input-primary mb-4" />
