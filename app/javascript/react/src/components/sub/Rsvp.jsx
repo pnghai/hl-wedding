@@ -26,14 +26,8 @@ export default function Rsvp(){
       ),
   });
   const captchaRef = useRef(null);
-  const onLoad = () => {
-    // this reaches out to the hCaptcha JS API and runs the
-    // execute function on it. you can use other functions as
-    // documented here:
-    // https://docs.hcaptcha.com/configuration#jsapi
-    captchaRef.current.execute();
-  };
   const submitHandler = async (payload, { setSubmitting, resetForm }) => {
+    captchaRef.current.execute();
     setSubmitting(true);
     axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('[name=csrf-token]').content
     try {
@@ -83,6 +77,8 @@ export default function Rsvp(){
                       onVerify={(token)=> {
                         setFieldValue('token', token)
                       }}
+                      // onError={onError}
+                      // onExpire={onExpire}
                       ref={captchaRef}
                     />
                     <button disabled={!isValid || isSubmitting} type="submit" className="btn btn-primary rounded-none">Submit</button>

@@ -20,15 +20,14 @@ export default function Couples(){
               <span className="font-alex text-2xl text-twine mt-1 mb-3">Trưởng nữ</span>
               <p>Olivia fringilla dui at elit finibus viverra nec a lacus seda themo the miss druane semper sollicitudin non the fermen.</p>
               <div className="mt-4">
-                <SocialLink href="https://www.facebook.com/" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
-                <SocialLink href="http://twitter.com/" className="mr-2"> <TbBrandTwitter size="18px"/> </SocialLink>
-                <SocialLink href="https://www.instagram.com/"> <TbBrandInstagram size="18px"/> </SocialLink>
+                <SocialLink href="https://www.facebook.com/akuma.san.12" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
+                <SocialLink href="https://www.instagram.com/daomylinh.kt"> <TbBrandInstagram size="18px"/> </SocialLink>
               </div>
             </div>
           </div>
           <div className="p-8 bg-white flex flex-col xl:flex-row">
             <div>
-              <Avatar className="mb-8 xl:mb-0 xl:ml-6">
+              <Avatar className="mb-8 xl:mb-0 xl:mr-6">
                 <img src="https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/bride.jpg" alt="bride"/>
               </Avatar>
             </div>
@@ -40,9 +39,9 @@ export default function Couples(){
               <span className="font-alex text-2xl text-twine mt-1 mb-3">Trưởng nam</span>
               <p>Olivia fringilla dui at elit finibus viverra nec a lacus seda themo the miss druane semper sollicitudin non the fermen.</p>
               <div className="mt-4">
-                <SocialLink href="https://www.facebook.com/" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
-                <SocialLink href="http://twitter.com/" className="mr-2"> <TbBrandTwitter size="18px"/> </SocialLink>
-                <SocialLink href="https://www.instagram.com/"> <TbBrandInstagram size="18px"/> </SocialLink>
+                <SocialLink href="https://www.facebook.com/phnghai" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
+                <SocialLink href="http://twitter.com/pnghai" className="mr-2"> <TbBrandTwitter size="18px"/> </SocialLink>
+                <SocialLink href="https://www.instagram.com/pnghai"> <TbBrandInstagram size="18px"/> </SocialLink>
               </div>
             </div>
           </div>
