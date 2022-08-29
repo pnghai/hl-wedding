@@ -73,7 +73,7 @@ export default function Rsvp(){
                     <Field component="textarea" id="message" name="message" placeholder="Message" className="textarea textarea-primary w-full mb-4" />
                     <HCaptcha
                       sitekey={HCAPTCHA_SITE_KEY}
-                      onLoad={onLoad}
+                      // onLoad={onLoad}
                       onVerify={(token)=> {
                         setFieldValue('token', token)
                       }}
