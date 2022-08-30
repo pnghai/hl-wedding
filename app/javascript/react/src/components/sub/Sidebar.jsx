@@ -5,8 +5,10 @@ import { MARRIAGE_DATE } from "../../utils/config";
 import Menu from "./Menu";
 import { Aside } from "../../utils/styles";
 import LangSelector from "./LangSelector";
+import { useTranslation } from "react-i18next";
 
 export default function Sidebar({ className }){
+  const { t } = useTranslation();
   return(
     <Aside className={className}>
       <div>
@@ -15,9 +17,9 @@ export default function Sidebar({ className }){
         </div>
         <p className="font-alex text-twine text-2xl md:text-3xl leading-loose md:my-4">Mỹ Linh & Nguyễn Hải</p>
         <h6 className="font-nunito-sans text-xs tracking-[5px] mb-1.5">
-          {format(MARRIAGE_DATE, "dd.MM.yyyy 'DL'")}
+          {format(MARRIAGE_DATE, t('date_format'))}
           <br/>
-          (20-10-Nhâm Dần)
+          {t("Lunar Date")}
         </h6>
       </div>
       <Menu/>

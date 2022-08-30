@@ -1,8 +1,12 @@
 import * as React from "react";
 import { dots } from "../../../../assets";
+import { format } from "date-fns";
 import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
+import { Trans, useTranslation } from "react-i18next";
+import { MARRIAGE_DATE } from "../../utils/config";
 
 export default function Story(){
+  const { t } = useTranslation();
   return(
     <section id="story" className=" py-24">
       <Container>
@@ -18,19 +22,16 @@ export default function Story(){
             </div>
           </div>
           <div className="md:col-span-7">
-            <SmallTitle>Our love.</SmallTitle>
-            <Subtitle>Our Story</Subtitle>
-            <StoryP>Curabit aliquet orci elit genes tristique lorem commodo vitae. Tuliaum tincidunt nete sede gravida
-              aliquam, neque libero hendrerit magna, sit amet mollis lacus ithe maurise. Dunya erat volutpat edat
-              themo the druanye semper.</StoryP>
-            <StoryP>Luality fringilla duiman at elit vinibus viverra nec a lacus themo the druanye sene sollicitudin mi
-              suscipit non sagie the fermen.</StoryP>
-            <StoryP>Phasellus viverra tristique justo duis vitae diam neque nivamus ac est augue artine aringilla dui at
-              elit finibus viverra nec a lacus. Nedana themo eros odio semper soe suscipit non. Curabit aliquet orci
-              elit genes tristique.</StoryP>
-            <h4 className="font-garamond mb-5 font-medium text-2xl leading-5">Dec 5th, 2021, We Said Yes!</h4>
-            <StoryP>Luality fringilla duiman at elit finibus viverra nec a lacus themo the druanye sene sollicitudin mi
-              suscipit non sagie the fermen.</StoryP>
+            <SmallTitle>{t("Our love.")}</SmallTitle>
+            <Subtitle>{t("Our Story")}</Subtitle>
+            <StoryP>{t("story_1")}</StoryP>
+            <StoryP>{t("story_2")}</StoryP>
+            <StoryP>{t("story_3")}</StoryP>
+            <h4 className="font-garamond mb-5 font-medium text-2xl leading-5">
+              <Trans i18nKey="said_yes">
+                {{ time: format(MARRIAGE_DATE, t("date_format_3")) }}, We Said Yes!
+              </Trans>{t("")}</h4>
+            <StoryP>{t("story_4")}</StoryP>
           </div>
         </div>
       </Container>

@@ -57,9 +57,9 @@ module.exports = {
         }
       },
       fontFamily: {
-        "nunito-sans": ["\"Nunito Sans\"", "sans-serif"],
-        "garamond": ["\"Cormorant Garamond\"", "serif"],
-        "alex": ["\"Alex Brush\"", "cursive"],
+        "nunito-sans": ["\"Nunito Sans\"", "\"Noto Sans JP\"","sans-serif"],
+        "garamond": ["\"Cormorant Garamond\"", "\"Noto Serif JP\"", "serif"],
+        "alex": ["\"Alex Brush\"", "\"Klee One\"","cursive"],
         sans: ["Inter var", ...defaultTheme.fontFamily.sans]
       }
     }

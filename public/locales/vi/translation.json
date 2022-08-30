@@ -1,5 +1,26 @@
 {
   "Eldest Daughter": "Trưởng Nữ",
   "Eldest Son": "Trưởng Nam",
-  "text": "Tụi mình muốn làm website cưới để kể về chuyện tình của chúng mình, chia sẻ một chút về hành trình tụi mình đến với nhau, rồi tại sao lại tới hôn nhân, này kia kia nọ... Nhưng tụi mình đã nghĩ rất lâu nhưng vẫn ko biết kể gì. Không như những người yêu nhau lâu thiệt lâu mới cưới, tunhf sử kể ra phải 800 trang, tụi mình quen nhau, yêu nhau và quyết định về chung một nhà chỉ trong vòng 9 tháng. Nói một cách văn thơ, sến rện như bạn chồng thì là \"định mệnh\", \"duyên số\". Nói một cách trực quan, thẳng thắn như bạn vợ thì là \"hợp ăn, hợp chơi, hợp lao động\". Nhưng dù gì thì \"gặp đúng người, đúng thời điểm\" thì mình cưới thôi. Cưới vợ phải cưới liền tay, ông bà dạy vậy :D.\n\nTụi mình là những cá thể đầy khuyết điểm. Một người thì trẻ con, bộp chộp, thích khóc thầm được cái ưa xông pha, tháo vát, thích gánh team. Một người thì trông có vẻ thấu đáo nhưng \"lỳ bà cố\", lắm mộng mơ lại còn ưa cà khịa. Nhưng tụi mình đã quyết định sẽ xây dựng một gia đình hoàn hảo theo chuẩn của riêng tụi mình- êm ấm, thuận hòa, học tập tốt, đoàn kết tốt, ăn chơi tốt. Gia đình mình dự định sẽ có một bạn chồng thiệt vững chãi, đáng tin, một bạn vợ tiếp tục mộng mơ nhưng sẽ hiền lành và thấu đáo thêm 10 phần nữa.\n\nNgày ..... là ngày đầu tiên tụi mình bước trên hành trình xây dựng gia đình trong mơ ấy. Tụi mình rất mong sự hiện diện của những người tụi mình thương yêu và nhận được lời chúc phúc của mọi người.\n\nThương mời mn tới dự đám cưới của tụi mình\nP/S: Ai thấy quý tụi mình quá chừng thì ủng hộ cho tụi mình... tại đây nhé. Hihi"
+  "Lunar Date": "(20-10-Nhâm Dần)",
+  "date_format": "dd.MM.yyyy 'DL'",
+  "date_format_2": "dd 'Tháng' MM 'Năm' yyyy",
+  "date_format_3": "dd 'Tháng' MM 'Năm' yyyy",
+  "D10, HCMC": "Quận 10, Tp. Hồ Chí Minh",
+  "Home": "Trang Chủ",
+  "Couple": "Đôi Uyên Ương",
+  "Our Story": "Chuyện Tình",
+  "Friends": "Thân Hữu",
+  "Organization": "Tổ Chức",
+  "Gallery": "Hình Ảnh",
+  "When & Where": "Thời Gian  & Nơi Chốn",
+  "R.S.V.P": "Xác nhận Tham dự",
+  "couple_1": "Trông có vẻ thấu đáo nhưng \"lỳ bà cố\", lắm mộng mơ lại còn ưa cà khịa",
+  "couple_2": "Trẻ con, bộp chộp, thích khóc thầm được cái ưa xông pha, tháo vát, thích gánh team",
+  "Are getting married!": "Sắp sửa thành hôn!",
+  "story_1": "Tụi mình muốn làm website cưới để kể về chuyện tình của chúng mình, chia sẻ một chút về hành trình tụi mình đến với nhau, rồi tại sao lại tới hôn nhân, này kia kia nọ...”,Nhưng tụi mình đã nghĩ rất lâu nhưng vẫn ko biết kể gì. ",
+  "story_2": "Nếu như có những người yêu nhau lâu thiệt lâu mới cưới, tình sử kể ra chắc phải 800 trang có thừa, thì cũng có tụi mình quen nhau, yêu nhau và quyết định về chung một nhà chỉ trong vòng 9 tháng. Nói một cách văn thơ, sến rện như bạn chồng thì là \"định mệnh\", \"duyên số\". Nói một cách trực quan, thẳng thắn như bạn vợ thì là \"hợp ăn, hợp chơi, hợp lao động\". Nhưng dù gì thì \"gặp đúng người, đúng thời điểm\" thì mình cưới thôi. Cưới vợ phải cưới liền tay, ông bà dạy vậy :D.",
+  "story_3": "Tụi mình là những cá thể đầy khuyết điểm. Một người thì trẻ con, bộp chộp, thích khóc thầm được cái ưa xông pha, tháo vát, thích gánh team. Một người thì trông có vẻ thấu đáo nhưng \"lỳ bà cố\", lắm mộng mơ lại còn ưa cà khịa. Nhưng tụi mình đã quyết định sẽ xây dựng một gia đình hoàn hảo theo chuẩn của riêng tụi mình- êm ấm, thuận hòa, học tập tốt, đoàn kết tốt, ăn chơi tốt. Gia đình mình dự định sẽ có một bạn chồng thiệt vững chãi, đáng tin, một bạn vợ tiếp tục mộng mơ nhưng sẽ hiền lành và thấu đáo thêm 10 phần nữa.",
+  "said_yes": "Vào ngày {{time}}, Chúng Mình Gật Đầu Với Nhau!",
+  "story_4":  "Vì là ngày đầu tiên tụi mình bước trên hành trình xây dựng gia đình trong mơ ấy, tụi mình rất mong sự hiện diện của những người tụi mình thương yêu và nhận được lời chúc phúc của mọi người. Thương mời mn tới dự đám cưới của tụi mình",
+  "text": "P/S: Ai thấy quý tụi mình quá chừng thì ủng hộ cho tụi mình... tại đây nhé. Hihi"
 }

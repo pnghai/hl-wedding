@@ -2,6 +2,8 @@ import * as React from "react";
 import { BsHeart, TbBrandInstagram, TbBrandTwitter, TiSocialFacebook } from "react-icons/all";
 import { Avatar, Container, SocialLink } from "../../utils/styles";
 import { useTranslation } from "react-i18next";
+import { format } from "date-fns";
+import { MARRIAGE_DATE } from "../../utils/config";
 export default function Couples(){
   const { t } = useTranslation();
   return(
@@ -20,7 +22,7 @@ export default function Couples(){
                 <span className="ml-2"><BsHeart color="#BD945A" size="16px"/></span>
               </div>
               <span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Daughter")}</span>
-              <p>Trông có vẻ thấu đáo nhưng "lỳ bà cố", lắm mộng mơ lại còn ưa cà khịa</p>
+              <p>{t("couple_1")}</p>
               <div className="mt-4">
                 <SocialLink href="https://www.facebook.com/akuma.san.12" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
                 <SocialLink href="https://www.instagram.com/daomylinh.kt"> <TbBrandInstagram size="18px"/> </SocialLink>
@@ -38,8 +40,8 @@ export default function Couples(){
                 <span className="mr-2"><BsHeart color="#BD945A" size="16px"/></span>
                 Phan Nguyễn Hải
               </div>
-              <span className="font-alex text-2xl text-twine mt-1 mb-3">Trưởng nam</span>
-              <p>Trẻ con, bộp chộp, thích khóc thầm được cái ưa xông pha, tháo vát, thích gánh team. </p>
+              <span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Son")}</span>
+              <p>{t("couple_2")}</p>
               <div className="mt-4">
                 <SocialLink href="https://www.facebook.com/phnghai" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
                 <SocialLink href="http://twitter.com/pnghai" className="mr-2"> <TbBrandTwitter size="18px"/> </SocialLink>
@@ -50,10 +52,10 @@ export default function Couples(){
         </div>
         <div className="text-center">
           <h3 className="text-twine text-6xl font-alex">
-            Are getting married!
+            {t("Are getting married!")}
           </h3>
           <h4 className="text-lg font-garamond">
-            December 15, 2021 — New York, Brooklyn
+            {format(MARRIAGE_DATE, t('date_format_2'))} — {t("D10, HCMC")}
           </h4>
         </div>
       </Container>
