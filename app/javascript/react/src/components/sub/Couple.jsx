@@ -1,7 +1,9 @@
 import * as React from "react";
 import { BsHeart, TbBrandInstagram, TbBrandTwitter, TiSocialFacebook } from "react-icons/all";
 import { Avatar, Container, SocialLink } from "../../utils/styles";
+import { useTranslation } from "react-i18next";
 export default function Couples(){
+  const { t } = useTranslation();
   return(
     <section className="bg-hint-of-red py-24" id="couple">
       <Container>
@@ -17,8 +19,8 @@ export default function Couples(){
                 Đào Mỹ Linh
                 <span className="ml-2"><BsHeart color="#BD945A" size="16px"/></span>
               </div>
-              <span className="font-alex text-2xl text-twine mt-1 mb-3">Trưởng nữ</span>
-              <p>Olivia fringilla dui at elit finibus viverra nec a lacus seda themo the miss druane semper sollicitudin non the fermen.</p>
+              <span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Daughter")}</span>
+              <p>Trông có vẻ thấu đáo nhưng "lỳ bà cố", lắm mộng mơ lại còn ưa cà khịa</p>
               <div className="mt-4">
                 <SocialLink href="https://www.facebook.com/akuma.san.12" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
                 <SocialLink href="https://www.instagram.com/daomylinh.kt"> <TbBrandInstagram size="18px"/> </SocialLink>
@@ -37,7 +39,7 @@ export default function Couples(){
                 Phan Nguyễn Hải
               </div>
               <span className="font-alex text-2xl text-twine mt-1 mb-3">Trưởng nam</span>
-              <p>Olivia fringilla dui at elit finibus viverra nec a lacus seda themo the miss druane semper sollicitudin non the fermen.</p>
+              <p>Trẻ con, bộp chộp, thích khóc thầm được cái ưa xông pha, tháo vát, thích gánh team. </p>
               <div className="mt-4">
                 <SocialLink href="https://www.facebook.com/phnghai" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
                 <SocialLink href="http://twitter.com/pnghai" className="mr-2"> <TbBrandTwitter size="18px"/> </SocialLink>

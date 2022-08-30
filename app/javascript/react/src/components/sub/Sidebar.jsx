@@ -4,6 +4,7 @@ import { format } from "date-fns";
 import { MARRIAGE_DATE } from "../../utils/config";
 import Menu from "./Menu";
 import { Aside } from "../../utils/styles";
+import LangSelector from "./LangSelector";
 
 export default function Sidebar({ className }){
   return(
@@ -16,11 +17,12 @@ export default function Sidebar({ className }){
         <h6 className="font-nunito-sans text-xs tracking-[5px] mb-1.5">
           {format(MARRIAGE_DATE, "dd.MM.yyyy 'DL'")}
           <br/>
-          (20-10-2022 Â.L)
+          (20-10-Nhâm Dần)
         </h6>
       </div>
       <Menu/>
-      <div className="mt-auto font-nunito-sans text-sm text-zinc-400 tracking-wider">
+      <LangSelector/>
+      <div className="mt-3 font-nunito-sans text-sm text-zinc-400 tracking-wider">
         <div className="w-16 h-px bg-[#bd945a66] w-16 mx-auto my-1.5"/>
         <small className="text-center">
           Hai & Linh Wedding
