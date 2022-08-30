@@ -1,5 +1,5 @@
 import * as React from "react";
-import { dots } from "../../../../assets";
+import { dots, story } from "../../../../assets";
 import { format } from "date-fns";
 import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
 import { Trans, useTranslation } from "react-i18next";
@@ -16,7 +16,7 @@ export default function Story(){
               <div className="z-0 w-[90%] absolute top-[-18%] bottom-[-25%] left-0 bg-repeat" style={{ backgroundImage: `url(${dots})`}}/>
               <div className="pb-7 pr-7 pl-4 relative">
                 <div className="z-10 absolute top-8 right-0 left-11 bottom-0 border-8 border-twine border-solid"/>
-                <img src="https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/story.jpg" className="relative z-20 max-w-full"/>
+                <img src={story} className="relative z-20 max-w-full"/>
               </div>
               <div className="z-30 w-[120px] h-[120px] absolute top-[15px] right-[45px] bg-cover bg-no-repeat bg-center animate-[spin_12s_infinite_linear]" style={{ backgroundImage: `url(${wedding_logo})` }} />
             </div>

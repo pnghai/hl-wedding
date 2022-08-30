@@ -3,12 +3,13 @@ import { BsHeart } from "react-icons/all";
 import { format } from "date-fns";
 import { MARRIAGE_DATE } from "../../utils/config";
 import { useTranslation } from "react-i18next";
+import { lookingfw } from "../../../../assets";
 
 export default function LookingFw(){
   const { t } = useTranslation();
   return(
     <section id="looking-fw">
-      <div className="py-24 bg-cover bg-scroll md:bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-3.jpg)`}}>
+      <div className="py-24 bg-cover bg-scroll md:bg-fixed bg-no-repeat bg-center" style={{ backgroundImage: `url(${lookingfw})`}}>
         <div className="container px-8 lg:px-16">
           <div className="text-center text-white">
             <div className="inline-block">
