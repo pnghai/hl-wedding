@@ -7,6 +7,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import photos from "../data/photos";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 const slides = photos.map(({ src, width, height, images }) => ({
   src,
   aspectRatio: width / height,
@@ -17,12 +18,13 @@ const slides = photos.map(({ src, width, height, images }) => ({
 }));
 export default function Gallery(){
   const [index, setIndex] = useState(-1);
+  const { t } = useTranslation();
   return(
     <section id="gallery" className=" py-24">
       <Container>
         <div className="mb-8">
-          <SmallTitle>Gallery</SmallTitle>
-          <Subtitle>Our memories</Subtitle>
+          <SmallTitle>{t("Gallery")}</SmallTitle>
+          <Subtitle>{t("Our memories")}</Subtitle>
         </div>
         <PhotoAlbum
           photos={photos}

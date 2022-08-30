@@ -2,6 +2,7 @@ import * as React from "react";
 import Slider from 'react-slick';
 import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
 import { BiDirections, MdOutlineDirections, IoLocationOutline, IoTimeOutline } from "react-icons/all";
+import { useTranslation } from "react-i18next";
 const settings = {
   dots: false,
   infinite: true,
@@ -47,12 +48,13 @@ const data= [
     },
   ];
 export default function Questions(){
+  const { t } = useTranslation();
   return(
     <section id="event" className="bg-hint-of-red py-24">
       <Container>
         <div className="mb-8">
-          <SmallTitle>Questions</SmallTitle>
-          <Subtitle>When & Where</Subtitle>
+          <SmallTitle>{t("Questions")}</SmallTitle>
+          <Subtitle>{t("When & Where")}</Subtitle>
         </div>
         <div className="-mx-3">
           <Slider {...settings}>
@@ -65,7 +67,7 @@ export default function Questions(){
                     <img src={background} alt="" />
                   </div>
                   <div className="p-5 pb-6 bg-white">
-                    <h5 className="text-xl font-medium font-garamond leading-7 mt-2.5 mb-6 uppercase">{title}</h5>
+                    <h5 className="text-xl font-medium font-garamond leading-7 mt-2.5 mb-6 uppercase">{t(title)}</h5>
                     <StoryP>
                       <span className="inline-block mr-2"><Ico1 color="#BD945A" /></span>
                       {address1}</StoryP>

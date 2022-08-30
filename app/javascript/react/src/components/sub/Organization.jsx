@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
+import { useTranslation } from "react-i18next";
 const data = [
   {
     id: "01",
@@ -23,6 +24,7 @@ const data = [
   },
 ]
 export default function Organization(){
+  const { t } = useTranslation();
   return(
     <section id="organization" className="bg-hint-of-red py-24">
       <Container>

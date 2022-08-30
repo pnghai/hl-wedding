@@ -20,7 +20,7 @@ export default function MainView({ className }){
       <Couples/>
       <Countdown/>
       <Story/>
-      <Friends/>
+      {/*<Friends/>*/}
       <LookingFw/>
       <Organization/>
       <Gallery/>

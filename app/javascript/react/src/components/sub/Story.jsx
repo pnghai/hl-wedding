@@ -4,7 +4,7 @@ import { format } from "date-fns";
 import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
 import { Trans, useTranslation } from "react-i18next";
 import { MARRIAGE_DATE } from "../../utils/config";
-
+import { wedding_logo } from "../../../../assets";
 export default function Story(){
   const { t } = useTranslation();
   return(
@@ -18,7 +18,7 @@ export default function Story(){
                 <div className="z-10 absolute top-8 right-0 left-11 bottom-0 border-8 border-twine border-solid"/>
                 <img src="https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/story.jpg" className="relative z-20 max-w-full"/>
               </div>
-              <div className="z-30 w-[30%] h-[120px] absolute top-[15px] right-[45px] bg-cover bg-no-repeat bg-center animate-[spin_12s_infinite_linear]" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/wedding-logo.png)` }} />
+              <div className="z-30 w-[120px] h-[120px] absolute top-[15px] right-[45px] bg-cover bg-no-repeat bg-center animate-[spin_12s_infinite_linear]" style={{ backgroundImage: `url(${wedding_logo})` }} />
             </div>
           </div>
           <div className="md:col-span-7">

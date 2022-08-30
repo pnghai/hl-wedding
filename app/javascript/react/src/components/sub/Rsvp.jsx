@@ -45,8 +45,8 @@ export default function Rsvp(){
         <div className="container px-8 lg:px-16">
           <div className="bg-white p-10 md:w-2/4 mx-auto">
             <div className="text-center">
-              <SmallTitle>Will you attend?</SmallTitle>
-              <Subtitle>R.S.V.P</Subtitle>
+              <SmallTitle>{t("Will you attend?")}</SmallTitle>
+              <Subtitle>{t("R.S.V.P")}</Subtitle>
               <Formik
                 enableReinitialize
                 validationSchema={validationSchema}
@@ -61,16 +61,16 @@ export default function Rsvp(){
               >
                 {({ isValid, touched, errors, submitForm, isSubmitting, resetForm, setFieldValue }) => (
                   <Form className="font-nunito-sans mt-8">
-                    <Field id="name" name="name" placeholder="Name" className="input w-full input-bordered input-primary mb-4" />
+                    <Field id="name" name="name" placeholder={t("Name")} className="input w-full input-bordered input-primary mb-4" />
                     <Field
                       id="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder={t("Email")}
                       type="email"
                       className="input w-full input-bordered input-primary mb-4"
                     />
-                    <Field type="number" id="guests" name="guests" placeholder="Guests" className="input w-full input-bordered input-primary mb-4"  />
-                    <Field component="textarea" id="message" name="message" placeholder="Message" className="textarea textarea-primary w-full mb-4" />
+                    <Field type="number" id="guests" name="guests" placeholder={t("Guests")} className="input w-full input-bordered input-primary mb-4"  />
+                    <Field component="textarea" id="message" name="message" placeholder={t("Message")} className="textarea textarea-primary w-full mb-4" />
                     <HCaptcha
                       sitekey={HCAPTCHA_SITE_KEY}
                       // onLoad={onLoad}
@@ -81,7 +81,7 @@ export default function Rsvp(){
                       // onExpire={onExpire}
                       ref={captchaRef}
                     />
-                    <button disabled={!isValid || isSubmitting} type="submit" className="btn btn-primary rounded-none">Submit</button>
+                    <button disabled={!isValid || isSubmitting} type="submit" className="btn btn-primary rounded-none">{t("Submit")}</button>
                   </Form>
                 )}
               </Formik>
