@@ -7,9 +7,7 @@ import Story from "./Story";
 import Footer from "./Footer";
 import Rsvp from "./Rsvp";
 import LookingFw from "./LookingFw";
-import Questions from "./Questions";
 import Organization from "./Organization";
-import Friends from "./Friends";
 import { Main } from "../../utils/styles";
 import Gallery from "./Gallery";
 
@@ -24,7 +22,7 @@ export default function MainView({ className }){
       <LookingFw/>
       <Organization/>
       <Gallery/>
-      <Questions/>
+      {/*<Questions/>*/}
       <Rsvp/>
       <Footer/>
     </Main>
