@@ -3,17 +3,17 @@ import { Field, Form, Formik } from "formik";
 import * as yup from "yup";
 import isEmailValidator from "validator/lib/isEmail";
 import axios from "axios";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { SmallTitle, Subtitle } from "../../utils/styles";
 import { useTranslation } from "react-i18next";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { HCAPTCHA_SITE_KEY } from "../../utils/config";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Rsvp(){
   const { t } = useTranslation();
   const validationSchema = yup.object({
-    token: yup.string().required(),
+    // token: yup.string().required(),
     guests: yup.number().integer().min(0),
     email: yup
       .string()
@@ -25,18 +25,20 @@ export default function Rsvp(){
         (value) => (value ? isEmailValidator(value) : new yup.ValidationError(t("Invalid email address")))
       ),
   });
-  const captchaRef = useRef(null);
-  const submitHandler = async (payload, { setSubmitting, resetForm }) => {
-    captchaRef.current.execute();
+  const [stat, setStat] = useState({});
+  // const captchaRef = useRef(null);
+  const submitHandler = async (payload, { setSubmitting }) => {
+    // captchaRef.current.execute();
     setSubmitting(true);
     axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('[name=csrf-token]').content
     try {
-      const resp = await axios.post('/rsvps.json', payload)
-      toast.success(t("Succeeded"));
-      setSubmitting(false);
-      resetForm();
+      await axios.post('/rsvps.json', payload)
+      setStat({ type: "success", message: t("Thank you for your message")})
+      // setSubmitting(true);
+      // resetForm();
     } catch (error) {
       setSubmitting(false);
+      setStat({ type: "error", message: t("Fail: ") + error})
     }
   }
   return(
@@ -71,17 +73,29 @@ export default function Rsvp(){
                     />
                     <Field type="number" id="guests" name="guests" placeholder={t("Guests")} className="input w-full input-bordered input-primary mb-4"  />
                     <Field component="textarea" id="message" name="message" placeholder={t("Message")} className="textarea textarea-primary w-full mb-4" />
-                    <HCaptcha
-                      sitekey={HCAPTCHA_SITE_KEY}
-                      // onLoad={onLoad}
-                      onVerify={(token)=> {
-                        setFieldValue('token', token)
-                      }}
-                      // onError={onError}
-                      // onExpire={onExpire}
-                      ref={captchaRef}
-                    />
+                    {/*<HCaptcha*/}
+                    {/*  sitekey={HCAPTCHA_SITE_KEY}*/}
+                    {/*  // onLoad={onLoad}*/}
+                    {/*  onVerify={(token)=> {*/}
+                    {/*    setFieldValue('token', token)*/}
+                    {/*  }}*/}
+                    {/*  // onError={onError}*/}
+                    {/*  // onExpire={onExpire}*/}
+                    {/*  ref={captchaRef}*/}
+                    {/*/>*/}
                     <button disabled={!isValid || isSubmitting} type="submit" className="btn btn-primary rounded-none">{t("Submit")}</button>
+                    {stat?.type === "success" && <div className="mt-5 alert alert-success shadow-lg">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span>{stat.message}</span>
+                      </div>
+                    </div>}
+                    {stat?.type === "error" && <div className="mt-5 alert alert-error shadow-lg">
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <span>{stat.message}</span>
+                      </div>
+                    </div>}
                   </Form>
                 )}
               </Formik>

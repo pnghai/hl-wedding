@@ -10,7 +10,6 @@ import LookingFw from "./LookingFw";
 import Organization from "./Organization";
 import { Main } from "../../utils/styles";
 import Gallery from "./Gallery";
-
 export default function MainView({ className }){
   return(
     <Main className={className}>
