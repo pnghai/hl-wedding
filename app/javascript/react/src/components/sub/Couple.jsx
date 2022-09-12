@@ -6,7 +6,7 @@ import { format } from "date-fns";
 import { MARRIAGE_DATE } from "../../utils/config";
 import { bride, groom } from "../../../../assets";
 export default function Couples(){
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   return(
     <section className="bg-hint-of-red py-24" id="couple">
       <Container>
@@ -56,7 +56,7 @@ export default function Couples(){
             {t("Are getting married!")}
           </h3>
           <h4 className="text-lg font-garamond">
-            {format(MARRIAGE_DATE, t('date_format_2'))} — {t("D10, HCMC")}
+            {ready && format(MARRIAGE_DATE, t('MMMM d, yyyy'))} — {t("D10, HCMC")}
           </h4>
         </div>
       </Container>

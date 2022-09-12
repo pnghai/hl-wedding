@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { lookingfw } from "../../../../assets";
 
 export default function LookingFw(){
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   return(
     <section id="looking-fw">
       <div className="py-24 bg-cover bg-scroll md:bg-fixed bg-no-repeat bg-center" style={{ backgroundImage: `url(${lookingfw})`}}>
@@ -17,7 +17,7 @@ export default function LookingFw(){
             </div>
             <h4 className="font-alex text-6xl mb-4">{t("Looking forward to see you!")}</h4>
             <h3 className="font-nunito-sans text-5xl leading-[1em]">
-              {format(MARRIAGE_DATE, "dd.MM.yyyy")}
+              {/*{ready && format(MARRIAGE_DATE, "dd.MM.yyyy")}*/}
             </h3>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { Trans, useTranslation } from "react-i18next";
 import { MARRIAGE_DATE } from "../../utils/config";
 import { wedding_logo } from "../../../../assets";
 export default function Story(){
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   return(
     <section id="story" className=" py-24">
       <Container>
@@ -29,8 +29,9 @@ export default function Story(){
             <StoryP>{t("story_3")}</StoryP>
             <h4 className="font-garamond mb-5 font-medium text-2xl leading-5">
               <Trans i18nKey="said_yes">
-                {{ time: format(MARRIAGE_DATE, t("date_format_3")) }}, We Said Yes!
-              </Trans>{t("")}</h4>
+                {{ time: ready ? format(MARRIAGE_DATE, t("MMM do, yyyy")) : "" }}, We Said Yes!
+              </Trans>
+            </h4>
             <StoryP>{t("story_4")}</StoryP>
           </div>
         </div>

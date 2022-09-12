@@ -8,7 +8,7 @@ import LangSelector from "./LangSelector";
 import { useTranslation } from "react-i18next";
 
 export default function Sidebar({ className }){
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   return(
     <Aside className={className}>
       <div>
@@ -17,7 +17,7 @@ export default function Sidebar({ className }){
         </div>
         <p className="font-alex text-twine text-2xl md:text-3xl leading-loose md:my-4">Mỹ Linh & Nguyễn Hải</p>
         <h6 className="font-nunito-sans text-xs tracking-[5px] mb-1.5">
-          {format(MARRIAGE_DATE, t('date_format'))}
+          {ready && format(MARRIAGE_DATE, t('yyyy-MM-dd'))}
           <br/>
           {t("Lunar Date")}
         </h6>
