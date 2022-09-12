@@ -24,10 +24,10 @@ export default function Couples(){
               </div>
               <span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Daughter")}</span>
               <p>{t("couple_1")}</p>
-              <div className="mt-4">
-                <SocialLink href="https://www.facebook.com/akuma.san.12" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
-                <SocialLink href="https://www.instagram.com/daomylinh.kt"> <TbBrandInstagram size="18px"/> </SocialLink>
-              </div>
+              {/*<div className="mt-4">*/}
+              {/*  <SocialLink href="https://www.facebook.com/akuma.san.12" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>*/}
+              {/*  <SocialLink href="https://www.instagram.com/daomylinh.kt"> <TbBrandInstagram size="18px"/> </SocialLink>*/}
+              {/*</div>*/}
             </div>
           </div>
           <div className="p-8 bg-white flex flex-col xl:flex-row">
@@ -43,11 +43,11 @@ export default function Couples(){
               </div>
               <span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Son")}</span>
               <p>{t("couple_2")}</p>
-              <div className="mt-4">
-                <SocialLink href="https://www.facebook.com/phnghai" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>
-                <SocialLink href="http://twitter.com/pnghai" className="mr-2"> <TbBrandTwitter size="18px"/> </SocialLink>
-                <SocialLink href="https://www.instagram.com/pnghai"> <TbBrandInstagram size="18px"/> </SocialLink>
-              </div>
+              {/*<div className="mt-4">*/}
+              {/*  <SocialLink href="https://www.facebook.com/phnghai" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>*/}
+              {/*  <SocialLink href="http://twitter.com/pnghai" className="mr-2"> <TbBrandTwitter size="18px"/> </SocialLink>*/}
+              {/*  <SocialLink href="https://www.instagram.com/pnghai"> <TbBrandInstagram size="18px"/> </SocialLink>*/}
+              {/*</div>*/}
             </div>
           </div>
         </div>

@@ -27,11 +27,11 @@ export default function Story(){
             <StoryP>{t("story_1")}</StoryP>
             <StoryP>{t("story_2")}</StoryP>
             <StoryP>{t("story_3")}</StoryP>
-            <h4 className="font-garamond mb-5 font-medium text-2xl leading-5">
-              <Trans i18nKey="said_yes">
-                {{ time: ready ? format(MARRIAGE_DATE, t("MMM do, yyyy")) : "" }}, We Said Yes!
-              </Trans>
-            </h4>
+            {/*<h4 className="font-garamond mb-5 font-medium text-2xl leading-5">*/}
+            {/*  <Trans i18nKey="said_yes">*/}
+            {/*    {{ time: ready ? format(MARRIAGE_DATE, t("MMM do, yyyy")) : "" }}, We Said Yes!*/}
+            {/*  </Trans>*/}
+            {/*</h4>*/}
             <StoryP>{t("story_4")}</StoryP>
           </div>
         </div>

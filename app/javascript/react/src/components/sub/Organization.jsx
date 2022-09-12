@@ -41,7 +41,7 @@ const data = {
     {
       id: "01",
       title: "Hôn lễ",
-      desc: "Tổ chức tại tư gia từ 8:00 sáng"
+      desc: "Tổ chức tại tư gia lúc 8:00 sáng"
     },
     {
       id: "02",
@@ -51,7 +51,7 @@ const data = {
     {
       id: "03",
       title: "Tung Hoa Cưới",
-      desc: "Cô nàng độc thân may mắn nào sẽ bắt được bó hoa cưới của cô dâu ngày hôm đấy?"
+      desc: "Cô nàng độc thân may mắn nào sẽ bắt được bó hoa cưới và nhận lời chúc mừng đặc biệt từ tụi mình?"
     }
   ],
 };
