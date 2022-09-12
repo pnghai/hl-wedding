@@ -24,6 +24,11 @@ export default function Story(){
           <div className="md:col-span-7">
             <SmallTitle>{t("Our love.")}</SmallTitle>
             <Subtitle>{t("Our Story")}</Subtitle>
+            <ul>
+              <li><StoryP>{t("story_a")}</StoryP></li>
+              <li><StoryP>{t("story_b")}</StoryP></li>
+              <li><StoryP>{t("story_c")}</StoryP></li>
+            </ul>
             <StoryP>{t("story_1")}</StoryP>
             <StoryP>{t("story_2")}</StoryP>
             <StoryP>{t("story_3")}</StoryP>
