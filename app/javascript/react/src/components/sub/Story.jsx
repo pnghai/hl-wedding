@@ -29,7 +29,7 @@ export default function Story(){
               <li><StoryP>{t("story_b")}</StoryP></li>
               <li><StoryP>{t("story_c")}</StoryP></li>
             </ul>
-            <StoryP>{t("story_1")}</StoryP>
+            {/*<StoryP>{t("story_1")}</StoryP>*/}
             <StoryP>{t("story_2")}</StoryP>
             <StoryP>{t("story_3")}</StoryP>
             {/*<h4 className="font-garamond mb-5 font-medium text-2xl leading-5">*/}
