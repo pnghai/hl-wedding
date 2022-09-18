@@ -27,7 +27,7 @@
   "said_yes": "Vào ngày {{time}}, chúng mình Gật Đầu Về Bên Nhau!",
   "story_4":  "Ngày 13/11/2022 là ngày đầu tiên 2 đứa bước trên hành trình xây dựng gia đình trong mơ ấy. Tụi mình rất mong sự hiện diện của những người thương yêu và nhận được thật nhiều lời chúc phúc.",
   "Looking forward to see you!": "Thương mời bạn đến chung vui trong đám cưới của tụi mình!",
-  "text": "T/b: Ai thấy quý tụi mình quá chừng thì ủng hộ cho tụi mình qua các ví điện tử nhé. Hihi",
+  "story_ps": "T/b: Ai thấy quý tụi mình quá chừng thì ủng hộ cho tụi mình qua các ví điện tử nhé. \uD83D\uDE4A",
   "HCMC. All Rights Reserved.": "TP. Hồ Chí Minh. Mọi quyền được bảo vệ.",
   "Email is required": "Xin vui lòng nhập địa chỉ email",
   "Invalid email address": "Địa chỉ email không hợp lệ",
@@ -41,8 +41,14 @@
   "Submit": "Gửi",
   "Our memories": "Kỷ niệm của chúng mình",
   "Wedding": "Kết Hôn",
-  "Accomodations": "Nghỉ ngơi",
+  "Accommodations": "Nghỉ ngơi",
   "Wedding Ceremony": "Tiệc Cưới",
   "Thank you for your message": "Cảm ơn bạn đã phản hồi",
-  "Fail: ": "Có lỗi: "
+  "Fail: ": "Có lỗi: ",
+  "Developer": "Developer:",
+  "Content": "Content:",
+  "Designer": "Designer:",
+  "husband":"bạn chồng Phan Nguyễn Hải",
+  "wife":"bạn vợ \"Nhân Mã luôn vui tươi\" Đào Mỹ Linh",
+  "together": "Hai đứa mình & 101 lần ỏm tỏi"
 }

@@ -38,6 +38,7 @@ export default function Story(){
             {/*  </Trans>*/}
             {/*</h4>*/}
             <StoryP>{t("story_4")}</StoryP>
+            <StoryP>{t("story_ps")}</StoryP>
           </div>
         </div>
       </Container>

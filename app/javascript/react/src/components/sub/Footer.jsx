@@ -7,13 +7,13 @@ export default function Footer() {
   return (
     <footer className="bg-hint-of-red py-24">
       <img src={olive} alt="wedding symbol" className="h-8 mb-2.5 mx-auto" />
-      <div className="text-center">
+      <div className="text-center font-garamond">
         <p>
-          Developer: bạn chồng <span className="font-alex font-medium">Phan Nguyễn Hải</span>
+          {t("Developer")} <span className="font-alex">{t("husband")}</span>
           <br/>
-          Content: bạn vợ <span className="font-alex font-medium">"Nhân Mã luôn vui tươi" Đào Mỹ Linh</span>
+          {t("Content")} <span className="font-alex">{t("wife")}</span>
           <br/>
-          Designer: Hai đứa mình <small className="font-alex text-[80%]">&</small> 101 lần ỏm tỏi.
+          {t("Designer")} <span className="font-alex">{t("together")}</span>
         </p>
         <p className="text-slate-400 font-garamond text-lg mb-5 italic">© 2022 {t("HCMC. All Rights Reserved.")}</p>
       </div>

@@ -24,7 +24,7 @@ const settings = {
 const data= [
     {
       background: "https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/2-1.jpg",
-      title: "Accomodations",
+      title: "Accommodations",
       address1: "Hotel and distance from wedding party restaurant:",
       address2: "The William Vale (7 min)",
       icon1: BiDirections,

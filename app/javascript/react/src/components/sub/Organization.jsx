@@ -20,6 +20,23 @@ const data = {
       desc: "Who will be the luckiest unmarried girl at the day that can catch our bride's gorgeous floral centerpiece?"
     }
   ],
+  'en-US': [
+    {
+      id: "01",
+      title: "Ceremony",
+      desc: "Will be organized privately from 8.00"
+    },
+    {
+      id: "02",
+      title: "Party",
+      desc: "Will be organized at Đông Hồ Eden Restaurant from 18.00, District 10, HCMC"
+    },
+    {
+      id: "03",
+      title: "Bouquet Toss",
+      desc: "Who will be the luckiest unmarried girl at the day that can catch our bride's gorgeous floral centerpiece?"
+    }
+  ],
   ja: [
     {
       id: "01",
