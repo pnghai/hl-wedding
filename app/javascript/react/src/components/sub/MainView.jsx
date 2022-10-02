@@ -17,9 +17,9 @@ export default function MainView({ className }){
       <Couples/>
       <Countdown/>
       <Story/>
+      <LookingFw/>
       {/*<Friends/>*/}
       <Gallery/>
-      <LookingFw/>
       <Organization/>
       {/*<Questions/>*/}
       <Rsvp/>

@@ -1,9 +1,7 @@
 import * as React from "react";
 import { dots, story } from "../../../../assets";
-import { format } from "date-fns";
-import { Container, SmallTitle, StoryP, Subtitle } from "../../utils/styles";
-import { Trans, useTranslation } from "react-i18next";
-import { MARRIAGE_DATE } from "../../utils/config";
+import { Container, SmallTitle, StoryP, StoryLi, Subtitle } from "../../utils/styles";
+import { useTranslation } from "react-i18next";
 import { wedding_logo } from "../../../../assets";
 export default function Story(){
   const { t, ready } = useTranslation();
@@ -24,10 +22,10 @@ export default function Story(){
           <div className="md:col-span-7">
             <SmallTitle>{t("Our love.")}</SmallTitle>
             <Subtitle>{t("Our Story")}</Subtitle>
-            <ul>
-              <li><StoryP>{t("story_a")}</StoryP></li>
-              <li><StoryP>{t("story_b")}</StoryP></li>
-              <li><StoryP>{t("story_c")}</StoryP></li>
+            <ul className="list-disc list-inside mt-5">
+              <StoryLi>{t("story_a")}</StoryLi>
+              <StoryLi>{t("story_b")}</StoryLi>
+              <StoryLi>{t("story_c")}</StoryLi>
             </ul>
             {/*<StoryP>{t("story_1")}</StoryP>*/}
             <StoryP>{t("story_2")}</StoryP>

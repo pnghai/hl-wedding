@@ -5,6 +5,7 @@ const Aside = tw.aside`fixed top-0 left-0 md:translate-x-0 float-left w-[270px] 
 const Container = tw.div`container px-8 md:px-16 lg:px-32`;
 const Avatar =tw.div`rounded-full w-36 h-36 overflow-hidden mx-auto`;
 const StoryP = tw.p`font-nunito-sans mb-5 text-gray-400 leading-7 text-[15px]`;
+const StoryLi = tw.li`font-nunito-sans mb-5 text-gray-400 leading-7 text-[15px]`;
 const Main = tw.div`md:translate-x-0 h-screen float-right duration-500 transition-all ease-in-out w-full md:w-[70%] xl:w-[78%] overflow-scroll`;
 const SocialLink = tw.a`btn btn-sm btn-circle btn-outline btn-primary transition-all ease-in-out duration-500`;
 const SmallTitle = tw.span`font-alex text-3xl text-twine leading-10 mb-4`
@@ -20,5 +21,6 @@ export {
   SocialLink,
   SmallTitle,
   Subtitle,
-  StoryP
+  StoryP,
+  StoryLi
 }
