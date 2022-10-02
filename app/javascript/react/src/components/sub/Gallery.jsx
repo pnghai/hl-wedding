@@ -18,14 +18,14 @@ export default function Gallery(){
   const [index, setIndex] = useState(-1);
   const { t } = useTranslation();
   const slides = photos.map(({ key, src, width, height,
-                               title,
-                               description,
+                               // title,
+                               // description,
                                // images,
                              }) => ({
     src,
     aspectRatio: width / height,
-    title: t(key+"_title").length > 0 ? t(key+"_title") : null,
-    description: t(key+"_desc").length > 0 ? t(key+"_desc") : null
+    // title: t(key+"_title").length > 0 ? t(key+"_title") : null,
+    description: t(key+"_desc")!== key+"_desc" ? t(key+"_desc") : null,
     // srcSet: images.map((image) => ({
     //   src: image.src,
     //   width: image.width,
