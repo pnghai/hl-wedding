@@ -45,7 +45,7 @@ export default function Rsvp(){
     <section id="rsvp">
       <div className="py-24 bg-cover bg-scroll md:bg-fixed bg-no-repeat" style={{ backgroundImage: `url(https://shtheme.org/demosd/enrico/wp-content/uploads/2022/01/banner-2.jpg)`}}>
         <div className="container px-8 lg:px-16">
-          <div className="bg-white p-10 md:w-2/4 mx-auto">
+          <div className="bg-white p-10 md:w-3/4 lg:w-1/2 mx-auto">
             <div className="text-center font-garamond">
               <SmallTitle>{t("Will you attend?")}</SmallTitle>
               <Subtitle>{t("R.S.V.P")}</Subtitle>

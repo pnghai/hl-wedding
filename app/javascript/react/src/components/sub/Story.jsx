@@ -8,8 +8,8 @@ export default function Story(){
   return(
     <section id="story" className=" py-24">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-5">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="lg:col-span-5">
             <div className="relative md:mb-8">
               <div className="z-0 w-[90%] absolute top-[-18%] bottom-[-25%] left-0 bg-repeat" style={{ backgroundImage: `url(${dots})`}}/>
               <div className="pb-7 pr-7 pl-4 relative">
@@ -19,7 +19,7 @@ export default function Story(){
               <div className="z-30 w-[120px] h-[120px] absolute top-[15px] right-[45px] bg-cover bg-no-repeat bg-center animate-[spin_12s_infinite_linear]" style={{ backgroundImage: `url(${wedding_logo})` }} />
             </div>
           </div>
-          <div className="md:col-span-7">
+          <div className="lg:col-span-7">
             <SmallTitle>{t("Our love.")}</SmallTitle>
             <Subtitle>{t("Our Story")}</Subtitle>
             <ul className="list-disc list-inside mt-5">

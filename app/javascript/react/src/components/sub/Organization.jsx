@@ -81,11 +81,11 @@ export default function Organization(){
           <SmallTitle>{t("Wedding")}</SmallTitle>
           <Subtitle>{t("Organization")}</Subtitle>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 bg-cover bg-no-repeat border border-[#F6F1F0] divide-x divide-y divide-[#F6F1F0] bg-center" style={{ backgroundImage: `url(${slider})`, }}>
+        <div className="grid grid-cols-1 lg:grid-cols-3 bg-cover bg-no-repeat border border-[#F6F1F0] divide-x divide-y divide-[#F6F1F0] bg-center" style={{ backgroundImage: `url(${slider})`, }}>
           {data[i18n.language]?.map(({ id, title, desc}, key)=>(
-            <div key={key} className="px-8 py-16 bg-white transition-all duration-500 hover:!text-white hover:bg-black/60">
-              <h2 className="font-garamond font-medium leading-[1.25em] text-7xl text-transparent mb-4" style={{ WebkitTextStroke: '1px #BD945A', }}>{id}</h2>
-              <h6 className="font-garamond uppercase text-xl mt-2.5 mb-4">{title}</h6>
+            <div key={key} className="px-6 lg:px-8 lg:py-16 bg-white transition-all duration-500 hover:!text-white hover:bg-black/60">
+              <h2 className="font-garamond font-medium leading-[1.25em] text-7xl text-transparent mb-2 lg:mb-4" style={{ WebkitTextStroke: '1px #BD945A', }}>{id}</h2>
+              <h6 className="font-garamond uppercase text-xl lg:mt-2.5 mb-2 lg:mb-4">{title}</h6>
               <StoryP>{desc}</StoryP>
             </div>
           ))}
