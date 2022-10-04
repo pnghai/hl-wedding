@@ -4,7 +4,7 @@ class RsvpsController < ApplicationController
   # GET /rsvps
   # GET /rsvps.json
   def index
-    @rsvps = Rsvp.all
+    @rsvps = params[:pw]==ENV['APP_PASSWORD'] ? Rsvp.all : []
   end
 
   # GET /rsvps/1

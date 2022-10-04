@@ -52,6 +52,7 @@ services:
       - DB_POOL=${DB_POOL}
       - HCAPTCHA_SITE_KEY=${HCAPTCHA_SITE_KEY}
       - HCAPTCHA_SECRET_KEY=${HCAPTCHA_SECRET_KEY}
+      - APP_PASSWORD=${APP_PASSWORD}
   runner:
     <<: *backend
     command: /bin/bash
