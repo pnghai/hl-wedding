@@ -22,7 +22,7 @@ export default function Couples(){
                 Đào Mỹ Linh
                 <span className="ml-2"><BsHeart color="#BD945A" size="16px"/></span>
               </div>
-              <span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Daughter")}</span>
+              {/*<span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Daughter")}</span>*/}
               <p>{t("couple_1")}</p>
               {/*<div className="mt-4">*/}
               {/*  <SocialLink href="https://www.facebook.com/akuma.san.12" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>*/}
@@ -41,7 +41,7 @@ export default function Couples(){
                 <span className="mr-2"><BsHeart color="#BD945A" size="16px"/></span>
                 Phan Nguyễn Hải
               </div>
-              <span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Son")}</span>
+              {/*<span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Son")}</span>*/}
               <p>{t("couple_2")}</p>
               {/*<div className="mt-4">*/}
               {/*  <SocialLink href="https://www.facebook.com/phnghai" className="mr-2"> <TiSocialFacebook size="18px"/> </SocialLink>*/}

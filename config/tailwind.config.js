@@ -17,6 +17,9 @@ module.exports = {
     ]
   },
   theme: {
+    backgroundPosition: {
+      '30%-center': '30% center',
+    },
     extend: {
       animation: {
         fade: 'fadeIn 1ms ease-in-out',
