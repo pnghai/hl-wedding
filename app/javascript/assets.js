@@ -9,6 +9,7 @@ import bride from './images/bride.jpg'
 import groom from './images/groom.jpg'
 import slider from './images/slider.jpg'
 import dots from './images/dots.png'
+import IMG_4768 from './images/gallery/IMG_4768.jpg';
 import IMG_4843 from './images/gallery/IMG_4843-Enhanced.jpg';
 import IMG_5262 from './images/gallery/IMG_5262-Enhanced.jpg';
 import IMG_5290 from './images/gallery/IMG_5290-Enhanced.jpg';
@@ -47,6 +48,7 @@ export {
   DSC00577,
   dots,
   wedding_logo,
+  IMG_4768,
   IMG_4843,
   IMG_5262,
   IMG_5290,

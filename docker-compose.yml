@@ -53,6 +53,7 @@ services:
       - HCAPTCHA_SITE_KEY=${HCAPTCHA_SITE_KEY}
       - HCAPTCHA_SECRET_KEY=${HCAPTCHA_SECRET_KEY}
       - APP_PASSWORD=${APP_PASSWORD}
+      - ALLOWED_HOST=${ALLOWED_HOST}
   runner:
     <<: *backend
     command: /bin/bash
