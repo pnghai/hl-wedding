@@ -107,3 +107,4 @@ gem 'sidekiq-failures'
 gem "hotwire-livereload", "~> 1.1", :group => :development
 gem 'email_validator'
 gem "hcaptcha"
+gem 'sentry-raven'
