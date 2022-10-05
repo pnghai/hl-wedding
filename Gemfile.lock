@@ -118,10 +118,6 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faraday (2.6.0)
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.0)
     ffaker (2.21.0)
     ffi (1.15.5)
     fugit (1.7.1)
@@ -298,15 +294,17 @@ GEM
     rubocop-rspec (2.13.2)
       rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.5.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sentry-raven (3.1.2)
-      faraday (>= 1.0)
+    sentry-rails (5.5.0)
+      railties (>= 5.0)
+      sentry-ruby (~> 5.5.0)
+    sentry-ruby (5.5.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
     sidekiq (6.5.7)
       connection_pool (>= 2.2.5)
       rack (~> 2.0)
@@ -413,7 +411,8 @@ DEPENDENCIES
   rubocop-rails (~> 2.13, >= 2.13.2)
   rubocop-rspec (~> 2.8)
   selenium-webdriver
-  sentry-raven
+  sentry-rails
+  sentry-ruby
   sidekiq (~> 6.4, >= 6.4.1)
   sidekiq-cron (~> 1.2)
   sidekiq-failures
