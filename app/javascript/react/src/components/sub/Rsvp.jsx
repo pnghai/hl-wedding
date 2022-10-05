@@ -2,13 +2,10 @@ import * as React from "react";
 import { Field, Form, Formik } from "formik";
 import * as yup from "yup";
 import isEmailValidator from "validator/lib/isEmail";
-import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
 import { SmallTitle, Subtitle } from "../../utils/styles";
 import { useTranslation } from "react-i18next";
-import HCaptcha from "@hcaptcha/react-hcaptcha";
-import { HCAPTCHA_SITE_KEY } from "../../utils/config";
-import { useRef, useState } from "react";
+import { useState } from "react";
+import axios from "../../utils/axios";
 
 export default function Rsvp(){
   const { t } = useTranslation();
@@ -30,7 +27,6 @@ export default function Rsvp(){
   const submitHandler = async (payload, { setSubmitting }) => {
     // captchaRef.current.execute();
     setSubmitting(true);
-    axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('[name=csrf-token]').content
     try {
       await axios.post('/rsvps.json', payload)
       setStat({ type: "success", message: t("Thank you for your message")})
