@@ -1,6 +1,7 @@
 class RsvpsController < ApplicationController
   before_action :set_rsvp, only: %i[ show update destroy ]
 
+  skip_before_action :verify_authenticity_token
   # GET /rsvps
   # GET /rsvps.json
   def index
