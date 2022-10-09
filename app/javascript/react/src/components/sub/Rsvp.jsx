@@ -6,6 +6,7 @@ import { SmallTitle, Subtitle } from "../../utils/styles";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import axios from "../../utils/axios";
+import { BsFillPersonFill, GrPowerReset } from "react-icons/all";
 
 export default function Rsvp(){
   const { t } = useTranslation();
@@ -57,7 +58,7 @@ export default function Rsvp(){
                 }}
                 onSubmit={submitHandler}
               >
-                {({ isValid, touched, errors, submitForm, isSubmitting, resetForm, setFieldValue }) => (
+                {({ isValid, touched, errors, submitForm, isSubmitting, resetForm, setFieldValue, values: { guests } }) => (
                   <Form className="font-nunito-sans mt-8">
                     <Field id="name" name="name" placeholder={t("Name")} className="input w-full input-bordered input-primary mb-4" />
                     <Field
@@ -67,6 +68,34 @@ export default function Rsvp(){
                       type="email"
                       className="input w-full input-bordered input-primary mb-4"
                     />
+                    <label className="label">{t("Guests")}</label>
+                    {[...Array(4).keys()].map((_,idx)=>
+                      <button
+                        key={idx}
+                        onClick={()=>setFieldValue("guests",idx+1)}
+                        className={guests === 1 + idx ? "btn btn-circle mr-4 mb-4": "btn btn-circle mr-4 mb-4 btn-outline"}
+                        type="button"
+                      >
+                        <BsFillPersonFill size="18px"/>
+                      </button>
+                    )}
+                    {guests > 4 && (
+                      <button
+                        className={"btn btn-circle mr-4 mb-4"}
+                        type="button"
+                      >
+                        ...
+                      </button>
+                    )}
+                    {guests > 0 && (
+                      <button
+                        onClick={()=>setFieldValue("guests",0)}
+                        className="btn btn-warning btn-circle mr-4 mb-4"
+                        type="button"
+                      >
+                        <GrPowerReset size="18px"/>
+                      </button>
+                    )}
                     <Field type="number" id="guests" name="guests" placeholder={t("Guests")} className="input w-full input-bordered input-primary mb-4"  />
                     <Field component="textarea" id="message" name="message" placeholder={t("Message")} className="textarea textarea-primary w-full mb-4" />
                     {/*<HCaptcha*/}
