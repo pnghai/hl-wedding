@@ -3,7 +3,7 @@ import { olive } from "../../../../assets";
 import { format } from "date-fns";
 import { MARRIAGE_DATE } from "../../utils/config";
 import Menu from "./Menu";
-import { Aside } from "../../utils/styles";
+import { A2, Aside } from "../../utils/styles";
 import LangSelector from "./LangSelector";
 import { useTranslation } from "react-i18next";
 
@@ -27,7 +27,9 @@ export default function Sidebar({ className }){
       <div className="mt-3 font-nunito-sans text-sm text-zinc-400 tracking-wider">
         <div className="w-16 h-px bg-[#bd945a66] w-16 mx-auto my-1.5"/>
         <small className="text-center">
-          Hai & Linh Wedding
+          <A2 href="https://github.com/pnghai/hl-wedding" target="_blank">
+            Hai & Linh Wedding
+          </A2>
           <br/>2022, HCMC
         </small>
       </div>

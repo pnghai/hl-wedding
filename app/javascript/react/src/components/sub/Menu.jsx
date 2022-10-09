@@ -4,9 +4,9 @@ import tw from "tailwind-styled-components";
 import { useTranslation } from "react-i18next";
 
 const Li = tw.li`my-1 pb-1`
-const A = tw.a`font-garamond text-lg leading-loose  tracking-wider duration-300 transition-all ease-in-out border-b border-transparent hover:border-twine hover:duration-500`
 import menuData from '../data/menu.json';
 import { Context } from "../store";
+import { A } from "../../utils/styles";
 export default function Menu(){
   const [_,dispatch] = useContext(Context);
   const { t } = useTranslation();

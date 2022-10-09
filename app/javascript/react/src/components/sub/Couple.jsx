@@ -1,6 +1,6 @@
 import * as React from "react";
 import { BsHeart, TbBrandInstagram, TbBrandTwitter, TiSocialFacebook } from "react-icons/all";
-import { Avatar, Container, SocialLink } from "../../utils/styles";
+import { A, A2, Avatar, Container, SocialLink } from "../../utils/styles";
 import { useTranslation } from "react-i18next";
 import { format } from "date-fns";
 import { MARRIAGE_DATE } from "../../utils/config";
@@ -39,7 +39,7 @@ export default function Couples(){
             <div className="text-center xl:text-left">
               <div className="mb-3 text-2xl font-garamond flex items-center justify-center xl:justify-start">
                 <span className="mr-2"><BsHeart color="#BD945A" size="16px"/></span>
-                Phan Nguyễn Hải
+                <A2 href="https://www.linkedin.com/in/pnghai" target="_blank">Phan Nguyễn Hải</A2>
               </div>
               {/*<span className="font-alex text-2xl text-twine mt-1 mb-3">{t("Eldest Son")}</span>*/}
               <p>{t("couple_2")}</p>

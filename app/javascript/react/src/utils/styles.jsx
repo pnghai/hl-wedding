@@ -11,6 +11,8 @@ const SocialLink = tw.a`btn btn-sm btn-circle btn-outline btn-primary transition
 const SmallTitle = tw.span`font-alex text-3xl text-twine leading-10 mb-4`
 const Subtitle = tw.h2`font-garamond text-3xl tracking-wide uppercase`
 const NavToggler = tw.a`z-50 fixed left-0 top-0 transition-all duration-500 bg-twine rounded-full py-3 px-3 my-3.5 mx-7 md:opacity-0 transition-all duration-500`
+const A = tw.a`font-garamond text-lg leading-loose  tracking-wider duration-300 transition-all ease-in-out border-b border-transparent hover:border-twine hover:duration-500`
+const A2 = tw.a`duration-300 transition-all ease-in-out border-b border-transparent hover:border-twine hover:duration-500`
 export {
   MainScreen,
   Aside,
@@ -22,5 +24,7 @@ export {
   SmallTitle,
   Subtitle,
   StoryP,
-  StoryLi
+  StoryLi,
+  A,
+  A2,
 }
