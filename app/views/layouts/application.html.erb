@@ -17,6 +17,13 @@
     <% if Rails.env.development? %>
       <%= javascript_include_tag "hotwire-livereload", defer: true %>
     <% end %>
+    <style>
+        .yarl__slide_description{
+            overflow-y: scroll!important;
+            -webkit-line-clamp: none!important;
+            line-clamp: none!important;
+        }
+    </style>
   </head>
 
   <body>

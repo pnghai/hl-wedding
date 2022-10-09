@@ -27,7 +27,7 @@ i18n
           HttpApi               // fallback backend
         ],
         backendOptions: [{
-          defaultVersion: '0.1.10.6',
+          defaultVersion: '0.1.10.7',
           /* options for primary backend */
         }, {
           /* options for secondary backend */
