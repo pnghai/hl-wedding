@@ -2,11 +2,10 @@ import * as React from "react";
 import Loading from "./Loading";
 import MainView from "./sub/MainView";
 import Sidebar from "./sub/Sidebar";
-import { MainScreen, NavToggler } from "../utils/styles";
+import { Blur, MainScreen, NavToggler } from "../utils/styles";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/all";
 import { useContext, Suspense } from "react";
 import { Context } from "./store";
-import LangSelector from "./sub/LangSelector";
 import ReactCountryFlag from "react-country-flag/src";
 import { useTranslation } from "react-i18next";
 import { countriesMap } from "../utils/config";
@@ -21,6 +20,7 @@ function Dashboard(){
     <MainScreen>
       <Sidebar className={menuOpen ? `translate-x-0` :`-translate-x-[270px]`}/>
       <MainView className={ menuOpen ? `translate-x-[270px]` : `` }/>
+      <Blur className={ menuOpen ? `translate-x-[270px] opacity-100 visible` : `invisible opacity-0` } onClick={toggleMenu}/>
       <NavToggler className={ menuOpen ? `translate-x-[270px]` : `` } href="#" onClick={toggleMenu}>
         {menuOpen ?
           <IoCloseOutline color="#fff" size="25px"/> :

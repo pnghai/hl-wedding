@@ -7,6 +7,7 @@ const Avatar =tw.div`rounded-full w-36 h-36 overflow-hidden mx-auto`;
 const StoryP = tw.p`font-nunito-sans mb-5 text-gray-400 leading-7 text-[15px]`;
 const StoryLi = tw.li`font-nunito-sans mb-5 text-gray-400 leading-7 text-[15px]`;
 const Main = tw.div`md:translate-x-0 h-screen float-right duration-500 transition-all ease-in-out w-full md:w-[70%] xl:w-[78%] overflow-scroll`;
+const Blur = tw.div`bg-twine-800/35 absolute h-screen left-0 top-0 duration-500 transition-all ease-in-out w-full md:hidden`;
 const SocialLink = tw.a`btn btn-sm btn-circle btn-outline btn-primary transition-all ease-in-out duration-500`;
 const SmallTitle = tw.span`font-alex text-3xl text-twine leading-10 mb-4`
 const Subtitle = tw.h2`font-garamond text-3xl tracking-wide uppercase`
@@ -15,6 +16,7 @@ const A = tw.a`font-garamond text-lg leading-loose  tracking-wider duration-300 
 const A2 = tw.a`duration-300 transition-all ease-in-out border-b border-transparent hover:border-twine hover:duration-500`
 export {
   MainScreen,
+  Blur,
   Aside,
   Main,
   NavToggler,
