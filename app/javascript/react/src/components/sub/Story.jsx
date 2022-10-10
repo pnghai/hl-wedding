@@ -3,6 +3,7 @@ import { dots, story } from "../../../../assets";
 import { Container, SmallTitle, StoryP, StoryLi, Subtitle } from "../../utils/styles";
 import { useTranslation } from "react-i18next";
 import { wedding_logo } from "../../../../assets";
+import { KofiButton } from "react-kofi-button";
 export default function Story(){
   const { t, ready } = useTranslation();
   return(
@@ -36,6 +37,12 @@ export default function Story(){
             {/*  </Trans>*/}
             {/*</h4>*/}
             <StoryP>{t("story_4")}</StoryP>
+            <KofiButton
+              username="linhhai"
+              label={t("Save Our Day")}
+              preset="thin"
+              backgroundColor="#BD945A"
+            />
             {/*<StoryP>{t("story_ps")}</StoryP>*/}
           </div>
         </div>
