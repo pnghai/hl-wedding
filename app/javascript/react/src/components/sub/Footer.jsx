@@ -1,8 +1,8 @@
 import * as React from "react";
 import { olive } from "../../../../assets";
 import { useTranslation } from "react-i18next";
-import { A2 } from "../../utils/styles";
-import { KofiButton } from "react-kofi-button";
+import { A, A2 } from "../../utils/styles";
+
 export default function Footer() {
   const { t } = useTranslation();
   return (
@@ -16,12 +16,6 @@ export default function Footer() {
           <br/>
           {t("Designer")} <span className="font-alex">{t("together")}</span>
         </p>
-        <KofiButton
-          username="linhhai"
-          label={t("Save Our Day")}
-          preset="thin"
-          backgroundColor="#BD945A"
-        />
         <p className="text-slate-400 font-garamond text-lg mb-5 italic">© 2022 {t("HCMC. All Rights Reserved.")}</p>
       </div>
     </footer>

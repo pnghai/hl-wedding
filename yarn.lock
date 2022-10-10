@@ -56,11 +56,6 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/quicksand@^4.5.9":
-  version "4.5.11"
-  resolved "https://registry.yarnpkg.com/@fontsource/quicksand/-/quicksand-4.5.11.tgz#2865b0b2f1e82eaaaf94df881d7b0538ef11b5c7"
-  integrity sha512-SdgbixomUPBMjv+QZH72XsyJMY/P/XzEEFl7KCop+lAuBfy1fiqX+RyMheHhdNfR6Uk8MJla0iyb1ngcJXD0gw==
-
 "@hcaptcha/react-hcaptcha@^1.4.4":
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/@hcaptcha/react-hcaptcha/-/react-hcaptcha-1.4.4.tgz#529c55369160995115735b5fe5453daef4670f04"
@@ -2249,13 +2244,6 @@ react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-kofi-button@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/react-kofi-button/-/react-kofi-button-0.7.1.tgz#432024e78439a2ddae7e6ccc120fb05debd17914"
-  integrity sha512-1QWm7HpzrIQDPKyZ0jHucUt63pQMicfmO8MSBqw/blD57H32t8bz16v322xkm6FHZunMj98ywn49W643JEQnPA==
-  dependencies:
-    "@fontsource/quicksand" "^4.5.9"
 
 react-photo-album@^1.16.1:
   version "1.16.1"
