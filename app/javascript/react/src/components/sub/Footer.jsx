@@ -3,7 +3,6 @@ import { olive } from "../../../../assets";
 import { useTranslation } from "react-i18next";
 import { A2 } from "../../utils/styles";
 import { KofiButton } from "react-kofi-button";
-
 export default function Footer() {
   const { t } = useTranslation();
   return (
