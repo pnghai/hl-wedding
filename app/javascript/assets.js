@@ -1,13 +1,83 @@
 import olive from './images/olive.png'
 import wedding_logo from './images/wedding-logo.png'
 import rings from './images/rings.png'
-import lookingfw from './images/lookingfw.jpg'
-import story from './images/story.jpg'
-import DSC00577 from './images/DSC00577.jpg'
-import couple from './images/couple.jpg'
 import bride from './images/bride.jpg'
+import couple from './images/couple.jpg'
+import DSC00577 from './images/DSC00577.jpg'
 import groom from './images/groom.jpg'
+import lookingfw from './images/lookingfw.jpg'
 import slider from './images/slider.jpg'
+import story from './images/story.jpg'
+import bride_48 from './images/48/bride.jpg'
+import couple_48 from './images/48/couple.jpg'
+import DSC00577_48 from './images/48/DSC00577.jpg'
+import groom_48 from './images/48/groom.jpg'
+import lookingfw_48 from './images/48/lookingfw.jpg'
+import slider_48 from './images/48/slider.jpg'
+import story_48 from './images/48/story.jpg'
+
+import bride_96 from './images/96/bride.jpg'
+import couple_96 from './images/96/couple.jpg'
+import DSC00577_96 from './images/96/DSC00577.jpg'
+import groom_96 from './images/96/groom.jpg'
+import lookingfw_96 from './images/96/lookingfw.jpg'
+import slider_96 from './images/96/slider.jpg'
+import story_96 from './images/96/story.jpg'
+
+import bride_64 from './images/64/bride.jpg'
+import couple_64 from './images/64/couple.jpg'
+import DSC00577_64 from './images/64/DSC00577.jpg'
+import groom_64 from './images/64/groom.jpg'
+import lookingfw_64 from './images/64/lookingfw.jpg'
+import slider_64 from './images/64/slider.jpg'
+import story_64 from './images/64/story.jpg'
+
+import bride_128 from './images/128/bride.jpg'
+import couple_128 from './images/128/couple.jpg'
+import DSC00577_128 from './images/128/DSC00577.jpg'
+import groom_128 from './images/128/groom.jpg'
+import lookingfw_128 from './images/128/lookingfw.jpg'
+import slider_128 from './images/128/slider.jpg'
+import story_128 from './images/128/story.jpg'
+
+import bride_256 from './images/256/bride.jpg'
+import couple_256 from './images/256/couple.jpg'
+import DSC00577_256 from './images/256/DSC00577.jpg'
+import groom_256 from './images/256/groom.jpg'
+import lookingfw_256 from './images/256/lookingfw.jpg'
+import slider_256 from './images/256/slider.jpg'
+import story_256 from './images/256/story.jpg'
+
+import bride_384 from './images/384/bride.jpg'
+import couple_384 from './images/384/couple.jpg'
+import DSC00577_384 from './images/384/DSC00577.jpg'
+import groom_384 from './images/384/groom.jpg'
+import lookingfw_384 from './images/384/lookingfw.jpg'
+import slider_384 from './images/384/slider.jpg'
+import story_384 from './images/384/story.jpg'
+import bride_640 from './images/640/bride.jpg'
+import couple_640 from './images/640/couple.jpg'
+import DSC00577_640 from './images/640/DSC00577.jpg'
+import groom_640 from './images/640/groom.jpg'
+import lookingfw_640 from './images/640/lookingfw.jpg'
+import slider_640 from './images/640/slider.jpg'
+import story_640 from './images/640/story.jpg'
+
+import bride_1080 from './images/1080/bride.jpg'
+import couple_1080 from './images/1080/couple.jpg'
+import DSC00577_1080 from './images/1080/DSC00577.jpg'
+import groom_1080 from './images/1080/groom.jpg'
+import lookingfw_1080 from './images/1080/lookingfw.jpg'
+import slider_1080 from './images/1080/slider.jpg'
+import story_1080 from './images/1080/story.jpg'
+
+import bride_2400 from './images/2400/bride.jpg'
+import couple_2400 from './images/2400/couple.jpg'
+import DSC00577_2400 from './images/2400/DSC00577.jpg'
+import groom_2400 from './images/2400/groom.jpg'
+import lookingfw_2400 from './images/2400/lookingfw.jpg'
+import slider_2400 from './images/2400/slider.jpg'
+import story_2400 from './images/2400/story.jpg'
 import dots from './images/dots.png'
 import IMG_4768 from './images/gallery/IMG_4768.jpg';
 import IMG_4843 from './images/gallery/IMG_4843-Enhanced.jpg';
@@ -507,4 +577,67 @@ export {
   IMG_5830_2400,
   IMG_6130_2400,
   IMG_6516_2400,
+  bride_48,
+  couple_48,
+  DSC00577_48,
+  groom_48,
+  lookingfw_48,
+  slider_48,
+  story_48,
+  bride_96,
+  couple_96,
+  DSC00577_96,
+  groom_96,
+  lookingfw_96,
+  slider_96,
+  story_96,
+  bride_64,
+  couple_64,
+  DSC00577_64,
+  groom_64,
+  lookingfw_64,
+  slider_64,
+  story_64,
+  bride_128,
+  couple_128,
+  DSC00577_128,
+  groom_128,
+  lookingfw_128,
+  slider_128,
+  story_128,
+  bride_256,
+  couple_256,
+  DSC00577_256,
+  groom_256,
+  lookingfw_256,
+  slider_256,
+  story_256,
+  bride_384,
+  couple_384,
+  DSC00577_384,
+  groom_384,
+  lookingfw_384,
+  slider_384,
+  story_384,
+  bride_640,
+  couple_640,
+  DSC00577_640,
+  groom_640,
+  lookingfw_640,
+  slider_640,
+  story_640,
+  bride_1080,
+  couple_1080,
+  DSC00577_1080,
+  groom_1080,
+  lookingfw_1080,
+  slider_1080,
+  story_1080,
+  bride_2400,
+  couple_2400,
+  DSC00577_2400,
+  groom_2400,
+  lookingfw_2400,
+  slider_2400,
+  story_2400,
 }

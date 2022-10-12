@@ -4,7 +4,7 @@ import { A, A2, Avatar, Container, SocialLink } from "../../utils/styles";
 import { useTranslation } from "react-i18next";
 import { format } from "date-fns";
 import { MARRIAGE_DATE } from "../../utils/config";
-import { bride, groom } from "../../../../assets";
+import { bride_384, groom_384 } from "../../../../assets";
 export default function Couples(){
   const { t, ready } = useTranslation();
   return(
@@ -14,7 +14,7 @@ export default function Couples(){
           <div className="p-8 bg-white flex flex-col xl:flex-row-reverse">
             <div>
               <Avatar className="mb-8 xl:mb-0 xl:ml-6">
-                <img src={bride} alt="bride"/>
+                <img src={bride_384} alt="bride"/>
               </Avatar>
             </div>
             <div className="text-center xl:text-right">
@@ -33,7 +33,7 @@ export default function Couples(){
           <div className="p-8 bg-white flex flex-col xl:flex-row">
             <div>
               <Avatar className="mb-8 xl:mb-0 xl:mr-6">
-                <img src={groom} alt="groom"/>
+                <img src={groom_384} alt="groom"/>
               </Avatar>
             </div>
             <div className="text-center xl:text-left">
