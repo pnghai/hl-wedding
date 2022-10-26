@@ -25,7 +25,7 @@ function Dashboard(){
         {menuOpen ?
           <IoCloseOutline color="#fff" size="25px"/> :
           <ReactCountryFlag
-            countryCode={countriesMap[i18n.language]}
+            countryCode={countriesMap[i18n.language] || 'GB'}
             style={{
               fontSize: "1.8em",
               // lineHeight: "0.1em",

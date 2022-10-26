@@ -98,6 +98,7 @@ export default function Rsvp(){
                     )}
                     <Field type="number" id="guests" name="guests" placeholder={t("Guests")} className="input w-full input-bordered input-primary mb-4"  />
                     <Field component="textarea" id="message" name="message" placeholder={t("Message")} className="textarea textarea-primary w-full mb-4" />
+                    <small className="text-sm">{t("Vegetarian Note")}</small>
                     {/*<HCaptcha*/}
                     {/*  sitekey={HCAPTCHA_SITE_KEY}*/}
                     {/*  // onLoad={onLoad}*/}
