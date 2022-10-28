@@ -122,7 +122,7 @@ export default function Organization(){
         </div>
         <div className="py-6">
           <MapContainer center={position} zoom={17} scrollWheelZoom={false} className="h-96 w-full"
-                        placeholder={<MapPlaceholder />}>>
+                        placeholder={<MapPlaceholder />}>
             <TileLayer
               // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
