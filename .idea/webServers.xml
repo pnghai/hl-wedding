@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b4ea5da1-2c35-47a4-8b61-b06877786c4a" name="13.214.92.214" url="https://linhhai.fun">
+        <fileTransfer rootFolder="/home/ubuntu" accessType="SFTP" host="13.214.92.214" port="22" sshConfigId="49377128-7f03-4a97-bc26-e3ab8cd5d31c" sshConfig="ubuntu@13.214.92.214:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

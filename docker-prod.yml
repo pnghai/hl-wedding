@@ -7,7 +7,7 @@ services:
       - "80:80"
     restart: on-failure:2
     volumes_from:
-      - rails:ro
+      - rails
   runner:
     extends:
       file: docker-compose.yml
